@@ -130,11 +130,43 @@
   <!-- ============================================================ -->
   <!-- HERO — gabarit page d'offre : photo verticale + bloc prix     -->
   <!-- ============================================================ -->
-  <section class="mx-auto max-w-content px-6 pt-14 pb-24 md:pt-20 md:pb-24">
-    <div class="grid gap-8 md:grid-cols-2 md:gap-12 items-stretch">
+  <section class="mx-auto max-w-content px-6 pt-10 pb-16 md:pt-20 md:pb-24">
+    <div class="grid gap-6 md:grid-cols-2 md:gap-12">
 
-      <!-- Photo, dans sa vraie proportion portrait -->
-      <div class="w-full max-h-[380px] md:max-h-none rounded overflow-hidden border border-line order-1">
+      <!-- Titre : compact sur mobile, le prix est la vedette du premier écran -->
+      <div class="order-1 md:order-none md:col-start-2 md:row-start-1">
+        <p class="eyebrow mb-3 md:mb-4">Dépannage — Le Rouret & arrière-pays niçois</p>
+        <h1 class="text-3xl md:text-5xl leading-[1.15] md:leading-[1.1] mb-4 md:mb-6">
+          Dépannage électrique — Le Rouret & arrière-pays niçois
+        </h1>
+        <p class="text-base md:text-lg text-ink-muted max-w-lg">
+          Panne, coupure, disjoncteur qui saute : on identifie la cause, prix annoncé avant travaux, à chaque fois.
+        </p>
+      </div>
+
+      <!-- Carte de prix : sur mobile, juste après le titre, avant la photo -->
+      <div class="order-2 md:order-none md:col-start-2 md:row-start-2 bg-bone-2 border border-line rounded p-6 md:p-8 text-center md:text-left">
+        <p class="eyebrow mb-3">Diagnostic de panne</p>
+        <p class="font-serif text-8xl md:text-9xl text-accent mb-3 leading-none">89 €</p>
+        <p class="text-sm text-ink-muted mb-5">Déduit si vous nous confiez la réparation.</p>
+
+        <details class="mb-5 text-sm text-left">
+          <summary class="cursor-pointer text-accent font-medium text-center md:text-left">Voir le détail de l'offre</summary>
+          <p class="text-ink-muted mt-2">
+            Le déplacement et le diagnostic sont couverts par ce forfait. La réparation identifiée est ensuite chiffrée et validée avec vous avant d'être réalisée. Si vous nous la confiez (à partir d'environ 150 € de travaux), les 89 € sont déduits du montant final.
+          </p>
+        </details>
+
+        <div class="flex flex-col gap-2 mb-4">
+          <a href="../index.html#contact" class="btn-primary w-full">Réserver ce diagnostic</a>
+          <a href="tel:+33609219702" class="btn-secondary w-full">Appeler — 06 09 21 97 02</a>
+        </div>
+
+        <p class="text-xs text-ink-muted">Réponse sous 24 h ouvrées.</p>
+      </div>
+
+      <!-- Photo : ratio fixe pour préserver le cadrage, jamais étirée ni écrasée -->
+      <div class="order-3 md:order-none md:col-start-1 md:row-start-1 md:row-span-2 md:self-start rounded overflow-hidden border border-line aspect-[3/4]">
         <img
           src="../assets/img/depannage-hero.jpg"
           alt="Tableau électrique ouvert en cours de dépannage par Solazura, disjoncteurs et câblage apparents"
@@ -144,37 +176,6 @@
           loading="eager"
           fetchpriority="high"
         />
-      </div>
-
-      <!-- Texte + bloc prix -->
-      <div class="order-2 flex flex-col">
-        <p class="eyebrow mb-4">Dépannage — Le Rouret & arrière-pays niçois</p>
-        <h1 class="text-4xl md:text-5xl leading-[1.1] mb-6">
-          Dépannage électrique — Le Rouret & arrière-pays niçois
-        </h1>
-        <p class="text-lg text-ink-muted mb-8 max-w-lg">
-          Panne, coupure, disjoncteur qui saute : on identifie la cause, prix annoncé avant travaux, à chaque fois.
-        </p>
-
-        <div class="bg-bone-2 border border-line rounded p-6 md:p-8 mb-4">
-          <p class="eyebrow mb-2">Diagnostic de panne</p>
-          <p class="font-serif text-7xl md:text-8xl text-accent mb-2 leading-none">89 €</p>
-          <p class="text-sm text-ink-muted mb-4">Déduit si vous nous confiez la réparation.</p>
-
-          <details class="mb-5 text-sm">
-            <summary class="cursor-pointer text-accent font-medium">Voir le détail de l'offre</summary>
-            <p class="text-ink-muted mt-2">
-              Le déplacement et le diagnostic sont couverts par ce forfait. La réparation identifiée est ensuite chiffrée et validée avec vous avant d'être réalisée. Si vous nous la confiez (à partir d'environ 150 € de travaux), les 89 € sont déduits du montant final.
-            </p>
-          </details>
-
-          <div class="flex flex-col gap-2">
-            <a href="../index.html#contact" class="btn-primary w-full">Réserver ce diagnostic</a>
-            <a href="tel:+33609219702" class="btn-secondary w-full">Appeler — 06 09 21 97 02</a>
-          </div>
-        </div>
-
-        <p class="text-sm text-ink-muted">Réponse sous 24 h ouvrées.</p>
       </div>
 
     </div>
@@ -231,7 +232,7 @@
         <p class="text-sm text-ink-muted flex-1">« Efficace, rapide et professionnel. »</p>
       </blockquote>
     </div>
-    <a href="https://www.google.com/search?q=Solazura" class="text-accent hover:underline text-sm" target="_blank" rel="noopener">Voir tous les avis sur Google →</a>
+    <p class="text-sm text-ink-muted italic">Voir tous les avis sur Google → [PLACEHOLDER : URL directe de la fiche Google Business]</p>
   </section>
 
   <!-- ============================================================ -->
