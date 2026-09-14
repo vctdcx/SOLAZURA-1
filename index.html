@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Solazura — Électricien à Le Rouret & arrière-pays niçois | Diagnostic, mise en conformité, IRVE</title>
+<meta name="description" content="Électricien à Le Rouret, Valbonne, Mougins, Grasse et l'arrière-pays niçois. Prix fixes annoncés avant travaux, compte-rendu photographié, réponse sous 24 h ouvrées. Diagnostic de panne, mise en conformité, bornes de recharge." />
+<link rel="canonical" href="https://www.solazura.fr/" />
+<!-- PLACEHOLDER : nom de domaine définitif à confirmer — mettre à jour canonical + og:url + og:image ci-dessous -->
+
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="fr_FR" />
+<meta property="og:site_name" content="Solazura" />
+<meta property="og:title" content="Solazura — Électricien à Le Rouret & arrière-pays niçois" />
+<meta property="og:description" content="Prix fixes annoncés avant travaux, compte-rendu photographié, réponse sous 24 h ouvrées. Diagnostic de panne, mise en conformité, installation électrique, bornes IRVE." />
+<meta property="og:url" content="https://www.solazura.fr/" />
+<meta property="og:image" content="https://www.solazura.fr/assets/img/og-image.jpg" />
+<!-- PLACEHOLDER : og:image à fournir (1200x630) une fois le domaine confirmé -->
+
+<link rel="stylesheet" href="assets/css/output.css" />
+<link rel="icon" href="data:," />
+</head>
+<body>
+
+<a href="#contenu" class="skip-link">Aller au contenu principal</a>
+
+<!-- ============================================================ -->
+<!-- EN-TÊTE                                                       -->
+<!-- ============================================================ -->
+<header class="sticky top-0 z-50 bg-bone/95 backdrop-blur border-b border-line">
+  <!-- Barre utilitaire -->
+  <div class="bg-accent text-white text-sm">
+    <div class="mx-auto max-w-content px-6 py-2 flex items-center justify-between gap-4">
+      <a href="tel:+33609219702" class="flex items-center gap-2 hover:underline">
+        <span aria-hidden="true">&#9742;</span>
+        <span>06 09 21 97 02</span>
+      </a>
+      <a href="#contact" class="font-medium hover:underline">Réserver en ligne</a>
+    </div>
+  </div>
+
+  <!-- Navigation principale -->
+  <div class="mx-auto max-w-content px-6 py-4 flex items-center justify-between">
+    <a href="/" class="font-serif text-xl tracking-tight text-ink">Solazura</a>
+
+    <nav aria-label="Navigation principale" class="hidden md:flex items-center gap-8 text-sm">
+      <a href="#offres" class="hover:text-accent transition-colors">Offres</a>
+
+      <div class="relative">
+        <button
+          type="button"
+          data-services-trigger
+          aria-expanded="false"
+          aria-controls="services-dropdown"
+          class="flex items-center gap-1 hover:text-accent transition-colors"
+        >
+          Services
+          <svg width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5"/></svg>
+        </button>
+        <div
+          id="services-dropdown"
+          data-services-dropdown
+          hidden
+          class="absolute left-0 top-full mt-3 w-72 bg-bone border border-line rounded shadow-lg py-3"
+        >
+          <a href="#services" class="block px-5 py-2 text-sm hover:bg-bone-2 hover:text-accent">Dépannage électrique</a>
+          <a href="#services" class="block px-5 py-2 text-sm hover:bg-bone-2 hover:text-accent">Mise en conformité & tableaux</a>
+          <a href="#services" class="block px-5 py-2 text-sm hover:bg-bone-2 hover:text-accent">Installation électrique</a>
+          <a href="#services" class="block px-5 py-2 text-sm hover:bg-bone-2 hover:text-accent">Bornes de recharge IRVE</a>
+          <a href="#services" class="block px-5 py-2 text-sm hover:bg-bone-2 hover:text-accent">Domotique</a>
+          <div class="border-t border-line my-2"></div>
+          <a href="#services" class="block px-5 py-2 text-sm font-medium text-accent hover:bg-bone-2">Voir tous les services →</a>
+        </div>
+      </div>
+
+      <a href="#entreprise" class="hover:text-accent transition-colors">L'entreprise</a>
+      <a href="#zone" class="hover:text-accent transition-colors">Zone d'intervention</a>
+      <a href="#contact" class="hover:text-accent transition-colors">Contact</a>
+    </nav>
+
+    <div class="hidden md:flex items-center gap-3">
+      <a href="tel:+33609219702" class="btn-secondary">Appeler</a>
+      <a href="#contact" class="btn-primary">Réserver</a>
+    </div>
+
+    <!-- Bouton hamburger mobile -->
+    <button
+      type="button"
+      data-menu-toggle
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+      aria-label="Ouvrir le menu"
+      class="md:hidden flex flex-col gap-1.5 p-2"
+    >
+      <span class="block w-6 h-0.5 bg-ink"></span>
+      <span class="block w-6 h-0.5 bg-ink"></span>
+      <span class="block w-6 h-0.5 bg-ink"></span>
+    </button>
+  </div>
+
+</header>
+
+<!-- Panneau menu mobile (hors du header : le backdrop-blur du header crée
+     un containing block qui casserait le `fixed inset-0` s'il restait dedans) -->
+<div
+  id="mobile-menu"
+  data-menu-panel
+  hidden
+  class="md:hidden fixed inset-0 z-[60] bg-bone overflow-y-auto"
+>
+  <div class="flex items-center justify-between px-6 py-4 border-b border-line">
+    <span class="font-serif text-xl">Solazura</span>
+    <button type="button" data-menu-close aria-label="Fermer le menu" class="p-2 text-2xl leading-none">&times;</button>
+  </div>
+  <nav aria-label="Navigation mobile" class="flex flex-col gap-1 px-6 py-6 text-lg">
+    <a href="#offres" class="py-3 border-b border-line">Offres</a>
+    <a href="#services" class="py-3 border-b border-line">Services</a>
+    <a href="#entreprise" class="py-3 border-b border-line">L'entreprise</a>
+    <a href="#zone" class="py-3 border-b border-line">Zone d'intervention</a>
+    <a href="#contact" class="py-3 border-b border-line">Contact</a>
+    <div class="flex flex-col gap-3 mt-6">
+      <a href="tel:+33609219702" class="btn-secondary w-full">Appeler — 06 09 21 97 02</a>
+      <a href="#contact" class="btn-primary w-full">Réserver</a>
+    </div>
+  </nav>
+</div>
+
+<main id="contenu">
+
+  <!-- ============================================================ -->
+  <!-- HERO                                                          -->
+  <!-- ============================================================ -->
+  <section class="mx-auto max-w-content px-6 pt-14 pb-16 md:pt-20 md:pb-24">
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <p class="eyebrow mb-4">Électricien — Le Rouret & arrière-pays niçois</p>
+        <h1 class="text-4xl md:text-5xl leading-[1.1] mb-6">
+          Un électricien qui vous montre son travail.
+        </h1>
+        <p class="text-lg text-ink-muted mb-8 max-w-lg">
+          Solazura intervient chez vous avec un prix annoncé avant travaux et un compte-rendu photographié à la clé. Pas de mauvaise surprise, pas de jargon — juste un travail propre et documenté.
+        </p>
+        <div class="flex flex-wrap gap-4 mb-8">
+          <a href="#contact" class="btn-primary">Réserver une intervention</a>
+          <a href="tel:+33609219702" class="btn-secondary">Appeler — 06 09 21 97 02</a>
+        </div>
+        <div class="inline-flex items-center gap-2 text-sm text-ink-muted border border-line rounded px-4 py-2">
+          <span aria-hidden="true" class="text-accent">★★★★★</span>
+          <span><!-- PLACEHOLDER : note Google réelle -->4,9/5 sur Google — <span data-placeholder>[PLACEHOLDER nombre d'avis]</span> avis</span>
+        </div>
+      </div>
+      <div class="placeholder-photo rounded aspect-[4/5] md:aspect-[4/5]" style="min-height:420px" role="img" aria-label="Photo à venir : tableau électrique propre installé par Solazura">
+        [PLACEHOLDER PHOTO — tableau électrique propre, installation Solazura]
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- BANDEAU DE PREUVE                                             -->
+  <!-- ============================================================ -->
+  <section class="border-y border-line bg-bone-2">
+    <div class="mx-auto max-w-content px-6 py-10">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center mb-8">
+        <div>
+          <p class="font-serif text-3xl text-accent">4,9/5</p>
+          <p class="text-sm text-ink-muted mt-1"><span data-placeholder>[PLACEHOLDER]</span> avis Google</p>
+        </div>
+        <div>
+          <p class="font-serif text-3xl text-accent"><span data-placeholder>[PLACEHOLDER]</span></p>
+          <p class="text-sm text-ink-muted mt-1">interventions réalisées</p>
+        </div>
+        <div>
+          <p class="font-serif text-3xl text-accent">24h</p>
+          <p class="text-sm text-ink-muted mt-1">réponse ouvrée garantie</p>
+        </div>
+        <div>
+          <p class="font-serif text-3xl text-accent">7</p>
+          <p class="text-sm text-ink-muted mt-1">communes couvertes</p>
+        </div>
+      </div>
+      <div class="flex flex-wrap justify-center gap-x-8 gap-y-2 text-sm text-ink-muted border-t border-line pt-6">
+        <span>Assurance décennale Axeria</span>
+        <span aria-hidden="true">·</span>
+        <span>Artisan local, Le Rouret (06)</span>
+        <span aria-hidden="true">·</span>
+        <span>Prix fixes annoncés avant travaux</span>
+        <span aria-hidden="true">·</span>
+        <span>Compte-rendu photographié</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- OFFRES À LA UNE                                               -->
+  <!-- ============================================================ -->
+  <section id="offres" class="section">
+    <div class="mb-12 max-w-xl">
+      <p class="eyebrow mb-3">Offres</p>
+      <h2 class="text-3xl md:text-4xl">Trois demandes, trois prix clairs</h2>
+      <p class="text-ink-muted mt-4">Un prix annoncé avant de commencer, jamais après.</p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-8">
+      <article class="border border-line rounded p-8 flex flex-col">
+        <h3 class="text-xl mb-2">Diagnostic de panne</h3>
+        <p class="text-3xl font-serif text-accent mb-4">89 €</p>
+        <p class="text-sm text-ink-muted mb-6 flex-1">Recherche de panne électrique avec explication claire de la cause. Déduit du prix si vous nous confiez la réparation.</p>
+        <a href="#contact" class="btn-secondary w-full">Réserver ce diagnostic</a>
+      </article>
+
+      <article class="border border-line rounded p-8 flex flex-col">
+        <h3 class="text-xl mb-2">Devis d'installation électrique</h3>
+        <p class="text-3xl font-serif text-accent mb-4">Devis gratuit</p>
+        <p class="text-sm text-ink-muted mb-6 flex-1">Installation neuve, rénovation ou mise en conformité de tableau — visite et chiffrage sans engagement.</p>
+        <a href="#contact" class="btn-secondary w-full">Demander un devis</a>
+      </article>
+
+      <article class="border border-line rounded p-8 flex flex-col">
+        <h3 class="text-xl mb-2">Borne de recharge IRVE</h3>
+        <p class="text-3xl font-serif text-accent mb-4">Devis gratuit</p>
+        <p class="text-sm text-ink-muted mb-6 flex-1">Installation de borne de recharge pour véhicule électrique, étude de faisabilité comprise.</p>
+        <a href="#contact" class="btn-secondary w-full">Demander un devis</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- NOS SERVICES (hub SEO)                                        -->
+  <!-- ============================================================ -->
+  <section id="services" class="section bg-bone-2 border-y border-line">
+    <div class="mb-12 max-w-xl">
+      <p class="eyebrow mb-3">Services</p>
+      <h2 class="text-3xl md:text-4xl">Toute l'électricité résidentielle</h2>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="bg-bone border border-line rounded p-6">
+        <h3 class="text-base font-medium mb-2">Dépannage électrique</h3>
+        <p class="text-sm text-ink-muted mb-4">Panne, coupure, disjoncteur qui saute — intervention rapide.</p>
+        <span class="text-sm text-ink-muted italic">Page bientôt disponible</span>
+      </div>
+      <div class="bg-bone border border-line rounded p-6">
+        <h3 class="text-base font-medium mb-2">Mise en conformité électrique</h3>
+        <p class="text-sm text-ink-muted mb-4">Installation aux normes en vue d'une vente ou d'une location.</p>
+        <span class="text-sm text-ink-muted italic">Page bientôt disponible</span>
+      </div>
+      <div class="bg-bone border border-line rounded p-6">
+        <h3 class="text-base font-medium mb-2">Remplacement de tableau électrique</h3>
+        <p class="text-sm text-ink-muted mb-4">Tableau vétuste ou sous-dimensionné remis à niveau.</p>
+        <span class="text-sm text-ink-muted italic">Page bientôt disponible</span>
+      </div>
+      <div class="bg-bone border border-line rounded p-6">
+        <h3 class="text-base font-medium mb-2">Installation électrique complète</h3>
+        <p class="text-sm text-ink-muted mb-4">Construction neuve ou rénovation lourde, du tableau aux prises.</p>
+        <span class="text-sm text-ink-muted italic">Page bientôt disponible</span>
+      </div>
+      <div class="bg-bone border border-line rounded p-6">
+        <h3 class="text-base font-medium mb-2">Bornes de recharge IRVE</h3>
+        <p class="text-sm text-ink-muted mb-4">Recharge à domicile pour véhicule électrique ou hybride.</p>
+        <span class="text-sm text-ink-muted italic">Page bientôt disponible</span>
+      </div>
+      <div class="bg-bone border border-line rounded p-6">
+        <h3 class="text-base font-medium mb-2">Domotique</h3>
+        <p class="text-sm text-ink-muted mb-4">Pilotage de l'éclairage, des volets et du chauffage électrique.</p>
+        <span class="text-sm text-ink-muted italic">Page bientôt disponible</span>
+      </div>
+      <div class="bg-bone border border-line rounded p-6">
+        <h3 class="text-base font-medium mb-2">Éclairage intérieur & extérieur</h3>
+        <p class="text-sm text-ink-muted mb-4">Points lumineux, spots, éclairage de jardin et de façade.</p>
+        <span class="text-sm text-ink-muted italic">Page bientôt disponible</span>
+      </div>
+      <div class="bg-bone border border-line rounded p-6">
+        <h3 class="text-base font-medium mb-2">Mise à la terre</h3>
+        <p class="text-sm text-ink-muted mb-4">Vérification et reprise de la prise de terre de votre habitation.</p>
+        <span class="text-sm text-ink-muted italic">Page bientôt disponible</span>
+      </div>
+      <div class="bg-bone border border-line rounded p-6">
+        <h3 class="text-base font-medium mb-2">Prises & interrupteurs</h3>
+        <p class="text-sm text-ink-muted mb-4">Ajout, déplacement ou remplacement de prises et d'interrupteurs.</p>
+        <span class="text-sm text-ink-muted italic">Page bientôt disponible</span>
+      </div>
+      <div class="bg-bone border border-line rounded p-6">
+        <h3 class="text-base font-medium mb-2">Parafoudre</h3>
+        <p class="text-sm text-ink-muted mb-4">Protection de votre installation contre les surtensions.</p>
+        <span class="text-sm text-ink-muted italic">Page bientôt disponible</span>
+      </div>
+      <div class="bg-bone border border-line rounded p-6">
+        <h3 class="text-base font-medium mb-2">Recherche de panne</h3>
+        <p class="text-sm text-ink-muted mb-4">Diagnostic précis avant toute intervention, pour ne pas payer à l'aveugle.</p>
+        <span class="text-sm text-ink-muted italic">Page bientôt disponible</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- COMMENT ÇA SE PASSE                                           -->
+  <!-- ============================================================ -->
+  <section class="section">
+    <div class="mb-12 max-w-xl">
+      <p class="eyebrow mb-3">Méthode</p>
+      <h2 class="text-3xl md:text-4xl">Comment ça se passe</h2>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div>
+        <p class="font-serif text-4xl text-accent mb-3">01</p>
+        <h3 class="text-base font-medium mb-2">Appel ou rendez-vous</h3>
+        <p class="text-sm text-ink-muted">Vous décrivez votre besoin, nous convenons d'un créneau.</p>
+      </div>
+      <div>
+        <p class="font-serif text-4xl text-accent mb-3">02</p>
+        <h3 class="text-base font-medium mb-2">Devis fixe annoncé</h3>
+        <p class="text-sm text-ink-muted">Le prix est confirmé avant toute intervention.</p>
+      </div>
+      <div>
+        <p class="font-serif text-4xl text-accent mb-3">03</p>
+        <h3 class="text-base font-medium mb-2">Intervention</h3>
+        <p class="text-sm text-ink-muted">Nous intervenons chez vous, dans le respect de votre logement.</p>
+      </div>
+      <div>
+        <p class="font-serif text-4xl text-accent mb-3">04</p>
+        <h3 class="text-base font-medium mb-2">Compte-rendu photographié</h3>
+        <p class="text-sm text-ink-muted">Vous recevez un compte-rendu avec photos du travail réalisé.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- AVIS GOOGLE                                                   -->
+  <!-- ============================================================ -->
+  <section class="section bg-bone-2 border-y border-line">
+    <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+      <div>
+        <p class="eyebrow mb-3">Avis</p>
+        <h2 class="text-3xl md:text-4xl">Ce qu'en disent nos clients</h2>
+      </div>
+      <div class="flex items-center gap-3">
+        <span class="text-accent text-xl" aria-hidden="true">★★★★★</span>
+        <span class="text-sm text-ink-muted">4,9/5 — <span data-placeholder>[PLACEHOLDER nombre d'avis]</span> avis Google</span>
+      </div>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-8">
+      <blockquote class="bg-bone border border-line rounded p-6">
+        <p class="text-sm text-ink-muted mb-4">« <span data-placeholder>[PLACEHOLDER avis réel 1]</span> »</p>
+        <footer class="text-sm font-medium">— <span data-placeholder>[Prénom, PLACEHOLDER]</span></footer>
+      </blockquote>
+      <blockquote class="bg-bone border border-line rounded p-6">
+        <p class="text-sm text-ink-muted mb-4">« <span data-placeholder>[PLACEHOLDER avis réel 2]</span> »</p>
+        <footer class="text-sm font-medium">— <span data-placeholder>[Prénom, PLACEHOLDER]</span></footer>
+      </blockquote>
+      <blockquote class="bg-bone border border-line rounded p-6">
+        <p class="text-sm text-ink-muted mb-4">« <span data-placeholder>[PLACEHOLDER avis réel 3]</span> »</p>
+        <footer class="text-sm font-medium">— <span data-placeholder>[Prénom, PLACEHOLDER]</span></footer>
+      </blockquote>
+    </div>
+
+    <p class="mt-8 text-sm">
+      <span class="text-ink-muted italic">Lien vers la fiche Google — [PLACEHOLDER : URL de la fiche Google Business]</span>
+    </p>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- L'ENTREPRISE                                                  -->
+  <!-- ============================================================ -->
+  <section id="entreprise" class="section">
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <div class="order-2 md:order-1">
+        <p class="eyebrow mb-3">L'entreprise</p>
+        <h2 class="text-3xl md:text-4xl mb-6">Une structure, des standards</h2>
+        <p class="text-ink-muted mb-4">
+          Solazura est une entreprise d'électricité résidentielle basée au Rouret, dans les Alpes-Maritimes. Nous fondons notre travail sur trois principes simples : un prix annoncé avant travaux, un compte-rendu photographié à chaque intervention, et une réponse sous 24 h ouvrées.
+        </p>
+        <p class="text-ink-muted mb-6">
+          Fondée par Victor Decoux, Solazura intervient chez vous comme chez un client qu'on respecte — nous nous présentons comme des invités dans votre logement, jamais comme des gêneurs.
+        </p>
+        <ul class="space-y-2 text-sm text-ink-muted mb-6">
+          <li>Assurance décennale Axeria (via Orus) — contrat n° RCDA278570636</li>
+          <li>SIRET 101 614 709 00018</li>
+          <li><span data-placeholder>[PLACEHOLDER : certifications — Qualifelec IRVE, habilitations électriques]</span></li>
+        </ul>
+      </div>
+      <div class="order-1 md:order-2 placeholder-photo rounded aspect-[4/5]" style="min-height:380px" role="img" aria-label="Photo à venir : Victor Decoux devant le camion floqué Solazura">
+        [PLACEHOLDER PHOTO — Victor devant le camion floqué Solazura]
+      </div>
+    </div>
+
+    <!-- 8bis. Engagements -->
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-16 pt-16 border-t border-line">
+      <div class="text-center">
+        <p class="font-serif text-lg mb-2">Prix fixes</p>
+        <p class="text-sm text-ink-muted">Annoncés avant travaux, jamais après.</p>
+      </div>
+      <div class="text-center">
+        <p class="font-serif text-lg mb-2">Réponse 24 h</p>
+        <p class="text-sm text-ink-muted">Sous 24 h ouvrées, sans relance de votre part.</p>
+      </div>
+      <div class="text-center">
+        <p class="font-serif text-lg mb-2">Comptes-rendus documentés</p>
+        <p class="text-sm text-ink-muted">Photos du travail réalisé, à chaque intervention.</p>
+      </div>
+      <div class="text-center">
+        <p class="font-serif text-lg mb-2">Un invité, pas un gêneur</p>
+        <p class="text-sm text-ink-muted">Respect de votre logement, de A à Z.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- ZONE D'INTERVENTION                                           -->
+  <!-- ============================================================ -->
+  <section id="zone" class="section bg-bone-2 border-y border-line">
+    <div class="max-w-xl mb-10">
+      <p class="eyebrow mb-3">Zone d'intervention</p>
+      <h2 class="text-3xl md:text-4xl">Le Rouret & l'arrière-pays niçois</h2>
+      <p class="text-ink-muted mt-4">Solazura intervient dans les communes suivantes. Les pages dédiées par commune arrivent prochainement.</p>
+    </div>
+    <ul class="flex flex-wrap gap-3 text-sm">
+      <li class="bg-bone border border-line rounded px-4 py-2">Le Rouret</li>
+      <li class="bg-bone border border-line rounded px-4 py-2">Valbonne</li>
+      <li class="bg-bone border border-line rounded px-4 py-2">Mougins</li>
+      <li class="bg-bone border border-line rounded px-4 py-2">Grasse</li>
+      <li class="bg-bone border border-line rounded px-4 py-2">Opio</li>
+      <li class="bg-bone border border-line rounded px-4 py-2">Châteauneuf-Grasse</li>
+      <li class="bg-bone border border-line rounded px-4 py-2">Roquefort-les-Pins</li>
+    </ul>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- OFFRES EN COURS                                               -->
+  <!-- ============================================================ -->
+  <section class="section">
+    <div class="border border-accent/30 bg-accent-soft rounded p-8 md:p-10 flex flex-col md:flex-row md:items-center justify-between gap-6">
+      <div>
+        <p class="eyebrow mb-2">Offre en cours</p>
+        <p class="text-lg italic text-ink-muted">
+          <span data-placeholder>[PLACEHOLDER : aucune offre ponctuelle active pour le moment — à renseigner]</span>
+        </p>
+      </div>
+      <a href="#contact" class="btn-secondary whitespace-nowrap">Nous contacter</a>
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- FAQ                                                           -->
+  <!-- ============================================================ -->
+  <section class="section">
+    <div class="max-w-xl mb-12">
+      <p class="eyebrow mb-3">Questions fréquentes</p>
+      <h2 class="text-3xl md:text-4xl">Ce qu'on nous demande le plus</h2>
+    </div>
+
+    <div class="max-w-3xl divide-y divide-line border-y border-line">
+
+      <div>
+        <h3>
+          <button type="button" data-faq-trigger aria-expanded="false" aria-controls="faq-1" class="w-full flex items-center justify-between gap-4 py-5 text-left font-medium">
+            Le diagnostic à 89 € est-il vraiment déduit si je fais réparer ?
+            <span aria-hidden="true" class="text-accent">+</span>
+          </button>
+        </h3>
+        <div id="faq-1" hidden class="pb-5 text-sm text-ink-muted">
+          Oui. Si vous nous confiez la réparation identifiée lors du diagnostic (à partir d'environ 150 € de travaux), les 89 € sont déduits du montant final.
+        </div>
+      </div>
+
+      <div>
+        <h3>
+          <button type="button" data-faq-trigger aria-expanded="false" aria-controls="faq-2" class="w-full flex items-center justify-between gap-4 py-5 text-left font-medium">
+            L'audit sécurité à 199 € est-il aussi déductible ?
+            <span aria-hidden="true" class="text-accent">+</span>
+          </button>
+        </h3>
+        <div id="faq-2" hidden class="pb-5 text-sm text-ink-muted">
+          Oui. Si l'audit débouche sur une mise en conformité que vous confiez à Solazura, les 199 € sont déduits du devis de mise en conformité.
+        </div>
+      </div>
+
+      <div>
+        <h3>
+          <button type="button" data-faq-trigger aria-expanded="false" aria-controls="faq-3" class="w-full flex items-center justify-between gap-4 py-5 text-left font-medium">
+            Dans quelles communes intervenez-vous ?
+            <span aria-hidden="true" class="text-accent">+</span>
+          </button>
+        </h3>
+        <div id="faq-3" hidden class="pb-5 text-sm text-ink-muted">
+          Le Rouret, Valbonne, Mougins, Grasse, Opio, Châteauneuf-Grasse et Roquefort-les-Pins, dans l'arrière-pays niçois.
+        </div>
+      </div>
+
+      <div>
+        <h3>
+          <button type="button" data-faq-trigger aria-expanded="false" aria-controls="faq-4" class="w-full flex items-center justify-between gap-4 py-5 text-left font-medium">
+            Sous quel délai puis-je espérer une réponse ?
+            <span aria-hidden="true" class="text-accent">+</span>
+          </button>
+        </h3>
+        <div id="faq-4" hidden class="pb-5 text-sm text-ink-muted">
+          Nous répondons sous 24 h ouvrées à toute demande, par téléphone ou par le formulaire de contact.
+        </div>
+      </div>
+
+      <div>
+        <h3>
+          <button type="button" data-faq-trigger aria-expanded="false" aria-controls="faq-5" class="w-full flex items-center justify-between gap-4 py-5 text-left font-medium">
+            Vos prix sont-ils vraiment fixes ?
+            <span aria-hidden="true" class="text-accent">+</span>
+          </button>
+        </h3>
+        <div id="faq-5" hidden class="pb-5 text-sm text-ink-muted">
+          Oui. Pour tout livrable défini, le prix est annoncé avant l'intervention et ne change pas en cours de route. Pour les projets plus complexes, nous établissons un devis gratuit détaillé.
+        </div>
+      </div>
+
+      <div>
+        <h3>
+          <button type="button" data-faq-trigger aria-expanded="false" aria-controls="faq-6" class="w-full flex items-center justify-between gap-4 py-5 text-left font-medium">
+            Comment réserver une intervention ?
+            <span aria-hidden="true" class="text-accent">+</span>
+          </button>
+        </h3>
+        <div id="faq-6" hidden class="pb-5 text-sm text-ink-muted">
+          Par téléphone au 06 09 21 97 02 ou via le formulaire de contact de ce site. Un système de réservation en ligne avec créneaux est en préparation.
+        </div>
+      </div>
+
+      <div>
+        <h3>
+          <button type="button" data-faq-trigger aria-expanded="false" aria-controls="faq-7" class="w-full flex items-center justify-between gap-4 py-5 text-left font-medium">
+            Êtes-vous assuré pour intervenir chez moi ?
+            <span aria-hidden="true" class="text-accent">+</span>
+          </button>
+        </h3>
+        <div id="faq-7" hidden class="pb-5 text-sm text-ink-muted">
+          Oui, Solazura est couverte par une assurance décennale auprès d'Axeria (via Orus), contrat n° RCDA278570636.
+        </div>
+      </div>
+
+      <div>
+        <h3>
+          <button type="button" data-faq-trigger aria-expanded="false" aria-controls="faq-8" class="w-full flex items-center justify-between gap-4 py-5 text-left font-medium">
+            Le devis est-il vraiment gratuit ?
+            <span aria-hidden="true" class="text-accent">+</span>
+          </button>
+        </h3>
+        <div id="faq-8" hidden class="pb-5 text-sm text-ink-muted">
+          Oui, pour toute installation ou mise en conformité, le devis est gratuit et sans engagement.
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- CTA FINAL                                                     -->
+  <!-- ============================================================ -->
+  <section class="bg-accent-dark text-white">
+    <div class="mx-auto max-w-content px-6 py-16 md:py-20 text-center">
+      <h2 class="text-3xl md:text-4xl mb-4 text-white">Un projet, une panne, une question ?</h2>
+      <p class="text-white/80 mb-8 max-w-lg mx-auto">Réponse sous 24 h ouvrées. Prix annoncé avant toute intervention.</p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="#contact" class="btn bg-white text-accent-dark hover:bg-bone-2">Réserver une intervention</a>
+        <a href="tel:+33609219702" class="btn border border-white text-white hover:bg-white/10">Appeler — 06 09 21 97 02</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- CONTACT / RÉSERVATION (destination unique des CTA)            -->
+  <!-- ============================================================ -->
+  <section id="contact" class="section">
+    <div class="grid md:grid-cols-2 gap-12">
+      <div>
+        <p class="eyebrow mb-3">Contact</p>
+        <h2 class="text-3xl md:text-4xl mb-6">Réserver ou demander un devis</h2>
+        <p class="text-ink-muted mb-8">
+          La prise de rendez-vous en ligne avec créneaux arrive prochainement. En attendant, contactez-nous directement — nous répondons sous 24 h ouvrées.
+        </p>
+        <dl class="space-y-4 text-sm">
+          <div class="flex gap-3">
+            <dt class="font-medium w-24">Téléphone</dt>
+            <dd><a href="tel:+33609219702" class="text-accent hover:underline">06 09 21 97 02</a></dd>
+          </div>
+          <div class="flex gap-3">
+            <dt class="font-medium w-24">Email</dt>
+            <dd><a href="mailto:victor@solazura.fr" class="text-accent hover:underline">victor@solazura.fr</a></dd>
+          </div>
+          <div class="flex gap-3">
+            <dt class="font-medium w-24">Adresse</dt>
+            <dd>30 impasse du Chardon Bleu, 06650 Le Rouret</dd>
+          </div>
+        </dl>
+      </div>
+
+      <form class="border border-line rounded p-8 space-y-5" aria-label="Formulaire de contact">
+        <div>
+          <label for="name" class="block text-sm font-medium mb-1">Nom</label>
+          <input type="text" id="name" name="name" required class="w-full border border-line rounded px-4 py-2 bg-bone focus-visible:outline-accent" />
+        </div>
+        <div>
+          <label for="phone" class="block text-sm font-medium mb-1">Téléphone</label>
+          <input type="tel" id="phone" name="phone" required class="w-full border border-line rounded px-4 py-2 bg-bone focus-visible:outline-accent" />
+        </div>
+        <div>
+          <label for="email" class="block text-sm font-medium mb-1">Email</label>
+          <input type="email" id="email" name="email" class="w-full border border-line rounded px-4 py-2 bg-bone focus-visible:outline-accent" />
+        </div>
+        <div>
+          <label for="service" class="block text-sm font-medium mb-1">Besoin</label>
+          <select id="service" name="service" class="w-full border border-line rounded px-4 py-2 bg-bone focus-visible:outline-accent">
+            <option>Diagnostic de panne — 89 €</option>
+            <option>Devis d'installation électrique</option>
+            <option>Borne de recharge IRVE</option>
+            <option>Autre demande</option>
+          </select>
+        </div>
+        <div>
+          <label for="message" class="block text-sm font-medium mb-1">Message</label>
+          <textarea id="message" name="message" rows="4" class="w-full border border-line rounded px-4 py-2 bg-bone focus-visible:outline-accent"></textarea>
+        </div>
+        <button type="submit" class="btn-primary w-full">Envoyer la demande</button>
+        <p class="text-xs text-ink-muted"><!-- PLACEHOLDER : ce formulaire nécessite un traitement d'envoi (backend / service tiers) avant mise en production --></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============================================================ -->
+<!-- BANDEAU DE CONSENTEMENT RGPD                                  -->
+<!-- ============================================================ -->
+<div
+  data-consent-banner
+  hidden
+  class="fixed bottom-0 inset-x-0 z-[70] bg-ink text-white px-6 py-5"
+  role="dialog"
+  aria-label="Consentement aux cookies"
+>
+  <div class="mx-auto max-w-content flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+    <p class="text-sm text-white/80">
+      Nous utilisons un cookie de mesure publicitaire (Google Ads) uniquement après votre accord. Voir notre <a href="pages/mentions-legales.html" class="underline">politique de confidentialité</a>.
+    </p>
+    <div class="flex gap-3 shrink-0">
+      <button type="button" data-consent-decline class="btn border border-white/40 text-white hover:bg-white/10">Refuser</button>
+      <button type="button" data-consent-accept class="btn bg-white text-ink hover:bg-bone-2">Accepter</button>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- FOOTER                                                        -->
+<!-- ============================================================ -->
+<footer class="bg-ink text-white">
+  <div class="mx-auto max-w-content px-6 py-16 grid sm:grid-cols-2 lg:grid-cols-4 gap-10 text-sm">
+    <div>
+      <p class="font-serif text-xl mb-4">Solazura</p>
+      <p class="text-white/70">Électricien résidentiel — Le Rouret & arrière-pays niçois.</p>
+    </div>
+    <div>
+      <p class="font-medium mb-4">Contact</p>
+      <ul class="space-y-2 text-white/70">
+        <li><a href="tel:+33609219702" class="hover:text-white">06 09 21 97 02</a></li>
+        <li><a href="mailto:victor@solazura.fr" class="hover:text-white">victor@solazura.fr</a></li>
+        <li>30 impasse du Chardon Bleu, 06650 Le Rouret</li>
+      </ul>
+    </div>
+    <div>
+      <p class="font-medium mb-4">Zone d'intervention</p>
+      <ul class="space-y-2 text-white/70">
+        <li>Le Rouret · Valbonne · Mougins</li>
+        <li>Grasse · Opio</li>
+        <li>Châteauneuf-Grasse · Roquefort-les-Pins</li>
+      </ul>
+    </div>
+    <div>
+      <p class="font-medium mb-4">Informations légales</p>
+      <ul class="space-y-2 text-white/70">
+        <li>SIRET 101 614 709 00018</li>
+        <li>Décennale Axeria (via Orus) — n° RCDA278570636</li>
+        <li><a href="pages/mentions-legales.html" class="hover:text-white">Mentions légales</a></li>
+        <li class="italic">Fiche Google — [PLACEHOLDER : URL]</li>
+        <li class="italic">Réseaux sociaux — [PLACEHOLDER]</li>
+      </ul>
+    </div>
+  </div>
+  <div class="border-t border-white/10 py-6 text-center text-xs text-white/50">
+    © <span id="year"></span> Solazura — Tous droits réservés.
+  </div>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script src="assets/js/main.js"></script>
+
+<!-- ============================================================ -->
+<!-- JSON-LD : LocalBusiness / Electrician                         -->
+<!-- ============================================================ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Electrician",
+  "name": "Solazura",
+  "image": "https://www.solazura.fr/assets/img/og-image.jpg",
+  "telephone": "+33609219702",
+  "email": "victor@solazura.fr",
+  "priceRange": "€€",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "30 impasse du Chardon Bleu",
+    "addressLocality": "Le Rouret",
+    "postalCode": "06650",
+    "addressRegion": "Alpes-Maritimes",
+    "addressCountry": "FR"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 43.693,
+    "longitude": 6.993
+  },
+  "areaServed": [
+    { "@type": "City", "name": "Le Rouret" },
+    { "@type": "City", "name": "Valbonne" },
+    { "@type": "City", "name": "Mougins" },
+    { "@type": "City", "name": "Grasse" },
+    { "@type": "City", "name": "Opio" },
+    { "@type": "City", "name": "Châteauneuf-Grasse" },
+    { "@type": "City", "name": "Roquefort-les-Pins" }
+  ],
+  "employee": {
+    "@type": "Person",
+    "name": "Victor Decoux"
+  },
+  "url": "https://www.solazura.fr/"
+}
+</script>
+
+<!-- ============================================================ -->
+<!-- JSON-LD : FAQPage (contenu identique à la FAQ visible)        -->
+<!-- ============================================================ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Le diagnostic à 89 € est-il vraiment déduit si je fais réparer ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Oui. Si vous nous confiez la réparation identifiée lors du diagnostic (à partir d'environ 150 € de travaux), les 89 € sont déduits du montant final."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "L'audit sécurité à 199 € est-il aussi déductible ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Oui. Si l'audit débouche sur une mise en conformité que vous confiez à Solazura, les 199 € sont déduits du devis de mise en conformité."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Dans quelles communes intervenez-vous ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Le Rouret, Valbonne, Mougins, Grasse, Opio, Châteauneuf-Grasse et Roquefort-les-Pins, dans l'arrière-pays niçois."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Sous quel délai puis-je espérer une réponse ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nous répondons sous 24 h ouvrées à toute demande, par téléphone ou par le formulaire de contact."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Vos prix sont-ils vraiment fixes ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Oui. Pour tout livrable défini, le prix est annoncé avant l'intervention et ne change pas en cours de route. Pour les projets plus complexes, nous établissons un devis gratuit détaillé."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Comment réserver une intervention ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Par téléphone au 06 09 21 97 02 ou via le formulaire de contact de ce site. Un système de réservation en ligne avec créneaux est en préparation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Êtes-vous assuré pour intervenir chez moi ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Oui, Solazura est couverte par une assurance décennale auprès d'Axeria (via Orus), contrat n° RCDA278570636."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Le devis est-il vraiment gratuit ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Oui, pour toute installation ou mise en conformité, le devis est gratuit et sans engagement."
+      }
+    }
+  ]
+}
+</script>
+
+</body>
+</html>
