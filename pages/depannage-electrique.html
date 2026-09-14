@@ -128,52 +128,41 @@
 <main id="contenu">
 
   <!-- ============================================================ -->
-  <!-- HERO — texte à gauche ; à droite, carte de prix puis photo    -->
+  <!-- HERO — gabarit page d'offre : photo verticale + bloc prix     -->
   <!-- ============================================================ -->
   <section class="mx-auto max-w-content px-6 pt-14 pb-24 md:pt-20 md:pb-24">
-    <div class="grid gap-8 md:grid-cols-2 md:gap-12 items-start">
+    <div class="grid gap-8 md:grid-cols-2 md:gap-12 items-stretch">
 
-      <!-- Colonne texte -->
-      <div>
-        <p class="eyebrow mb-4">Dépannage — Le Rouret & arrière-pays niçois</p>
-        <h1 class="text-4xl md:text-5xl leading-[1.1] mb-6">
-          Dépannage électrique — Le Rouret & arrière-pays niçois
-        </h1>
-        <p class="text-lg text-ink-muted mb-6 max-w-lg">
-          Panne, coupure, disjoncteur qui saute : on identifie la cause, prix annoncé avant travaux, à chaque fois.
-        </p>
-
-        <p class="text-xl mb-8">
-          Diagnostic de panne : <span class="text-accent font-serif font-semibold">89 €</span> — déduit si vous confiez la réparation.
-        </p>
-
-        <div class="flex flex-wrap items-center gap-4 mb-2">
-          <a href="tel:+33609219702" class="btn-primary text-base px-8 py-4">
-            <span aria-hidden="true">&#9742;</span> 06 09 21 97 02
-          </a>
-          <a href="../index.html#contact" class="btn-secondary">Réserver en ligne</a>
-        </div>
-        <p class="text-sm text-ink-muted">Réponse sous 24 h ouvrées.</p>
-      </div>
-
-      <!-- Carte d'offre (élément signature), un seul bloc : photo en miniature, prix massif en premier repère visuel -->
-      <div class="bg-bone border border-line rounded shadow-lg overflow-hidden text-center">
+      <!-- Photo, dans sa vraie proportion portrait -->
+      <div class="w-full max-h-[380px] md:max-h-none rounded overflow-hidden border border-line order-1">
         <img
           src="../assets/img/depannage-hero.jpg"
           alt="Tableau électrique ouvert en cours de dépannage par Solazura, disjoncteurs et câblage apparents"
           width="1800"
           height="2400"
-          class="w-full h-32 md:h-36 object-cover"
+          class="w-full h-full object-cover"
           loading="eager"
           fetchpriority="high"
         />
-        <div class="p-6 md:p-8">
+      </div>
+
+      <!-- Texte + bloc prix -->
+      <div class="order-2 flex flex-col">
+        <p class="eyebrow mb-4">Dépannage — Le Rouret & arrière-pays niçois</p>
+        <h1 class="text-4xl md:text-5xl leading-[1.1] mb-6">
+          Dépannage électrique — Le Rouret & arrière-pays niçois
+        </h1>
+        <p class="text-lg text-ink-muted mb-8 max-w-lg">
+          Panne, coupure, disjoncteur qui saute : on identifie la cause, prix annoncé avant travaux, à chaque fois.
+        </p>
+
+        <div class="bg-bone-2 border border-line rounded p-6 md:p-8 mb-4">
           <p class="eyebrow mb-2">Diagnostic de panne</p>
-          <p class="font-serif text-8xl md:text-9xl text-accent mb-2 leading-none">89 €</p>
+          <p class="font-serif text-6xl md:text-7xl text-accent mb-2 leading-none">89 €</p>
           <p class="text-sm text-ink-muted mb-4">Déduit si vous nous confiez la réparation.</p>
 
-          <details class="mb-4 text-sm text-left">
-            <summary class="cursor-pointer text-accent font-medium text-center">Voir le détail de l'offre</summary>
+          <details class="mb-5 text-sm">
+            <summary class="cursor-pointer text-accent font-medium">Voir le détail de l'offre</summary>
             <p class="text-ink-muted mt-2">
               Le déplacement et le diagnostic sont couverts par ce forfait. La réparation identifiée est ensuite chiffrée et validée avec vous avant d'être réalisée. Si vous nous la confiez (à partir d'environ 150 € de travaux), les 89 € sont déduits du montant final.
             </p>
@@ -181,9 +170,11 @@
 
           <div class="flex flex-col gap-2">
             <a href="../index.html#contact" class="btn-primary w-full">Réserver ce diagnostic</a>
-            <a href="tel:+33609219702" class="btn-secondary w-full">Appeler maintenant</a>
+            <a href="tel:+33609219702" class="btn-secondary w-full">Appeler — 06 09 21 97 02</a>
           </div>
         </div>
+
+        <p class="text-sm text-ink-muted">Réponse sous 24 h ouvrées.</p>
       </div>
 
     </div>
