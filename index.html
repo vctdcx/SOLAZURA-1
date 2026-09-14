@@ -454,62 +454,17 @@
     <div class="max-w-xl mb-10">
       <p class="eyebrow mb-3">Zone d'intervention</p>
       <h2 class="text-3xl md:text-4xl">Le Rouret & l'arrière-pays niçois</h2>
-      <p class="text-ink-muted mt-4">Solazura intervient depuis Le Rouret dans les communes environnantes. Les pages dédiées par commune arrivent prochainement.</p>
+      <p class="text-ink-muted mt-4">Solazura intervient dans les communes suivantes. Les pages dédiées par commune arrivent prochainement.</p>
     </div>
-
-    <div class="grid md:grid-cols-[1.3fr_1fr] gap-10 md:gap-16 items-center">
-      <!-- Carte stylisée : positions relatives dérivées des coordonnées réelles des communes -->
-      <svg viewBox="0 0 440 440" role="img" aria-label="Carte schématique de la zone d'intervention autour du Rouret" class="w-full h-auto max-w-md mx-auto md:mx-0">
-        <path d="M 155 21 C 191 -7, 194 2, 233 16 C 272 30, 366 87, 387 108 C 408 129, 376 112, 360 143 C 344 174, 313 245, 292 292 C 271 339, 279 443, 233 425 C 187 407, 28 253, 15 186 C 2 119, 119 49, 155 21 Z"
-          fill="none" class="stroke-line" stroke-width="1.5" stroke-dasharray="3 4" />
-
-        <!-- liaisons depuis Le Rouret -->
-        <g class="stroke-accent/30" stroke-width="1.5">
-          <line x1="233" y1="71" x2="267" y2="243" />
-          <line x1="233" y1="71" x2="233" y2="370" />
-          <line x1="233" y1="71" x2="70" y2="183" />
-          <line x1="233" y1="71" x2="336" y2="130" />
-          <line x1="233" y1="71" x2="180" y2="70" />
-          <line x1="233" y1="71" x2="307" y2="156" />
-        </g>
-
-        <!-- communes -->
-        <g class="fill-accent">
-          <circle cx="267" cy="243" r="5" />
-          <circle cx="233" cy="370" r="5" />
-          <circle cx="70" cy="183" r="5" />
-          <circle cx="336" cy="130" r="5" />
-          <circle cx="180" cy="70" r="5" />
-          <circle cx="307" cy="156" r="5" />
-        </g>
-        <g class="fill-ink-muted font-sans" style="font-size:12px">
-          <text x="278" y="240">Valbonne</text>
-          <text x="244" y="374">Mougins</text>
-          <text x="20" y="180">Grasse</text>
-          <text x="347" y="127">Opio</text>
-          <text x="30" y="66">Châteauneuf-Grasse</text>
-          <text x="318" y="152">Roquefort-les-Pins</text>
-        </g>
-
-        <!-- Le Rouret : point de départ, mis en avant -->
-        <circle cx="233" cy="71" r="10" class="fill-accent-soft stroke-accent" stroke-width="1.5" />
-        <circle cx="233" cy="71" r="4" class="fill-accent" />
-        <text x="245" y="55" class="fill-ink font-serif" style="font-size:15px">Le Rouret</text>
-      </svg>
-
-      <ul class="text-sm divide-y divide-line border-t border-b border-line">
-        <li class="py-3 flex items-center justify-between">
-          <span class="font-medium">Le Rouret</span>
-          <span class="text-xs text-ink-muted uppercase tracking-wide">Base</span>
-        </li>
-        <li class="py-3 text-ink-muted">Valbonne</li>
-        <li class="py-3 text-ink-muted">Mougins</li>
-        <li class="py-3 text-ink-muted">Grasse</li>
-        <li class="py-3 text-ink-muted">Opio</li>
-        <li class="py-3 text-ink-muted">Châteauneuf-Grasse</li>
-        <li class="py-3 text-ink-muted">Roquefort-les-Pins</li>
-      </ul>
-    </div>
+    <ul class="flex flex-wrap gap-3 text-sm">
+      <li class="bg-bone border border-line rounded px-4 py-2">Le Rouret</li>
+      <li class="bg-bone border border-line rounded px-4 py-2">Valbonne</li>
+      <li class="bg-bone border border-line rounded px-4 py-2">Mougins</li>
+      <li class="bg-bone border border-line rounded px-4 py-2">Grasse</li>
+      <li class="bg-bone border border-line rounded px-4 py-2">Opio</li>
+      <li class="bg-bone border border-line rounded px-4 py-2">Châteauneuf-Grasse</li>
+      <li class="bg-bone border border-line rounded px-4 py-2">Roquefort-les-Pins</li>
+    </ul>
   </section>
 
   <!-- ============================================================ -->
