@@ -131,10 +131,10 @@
   <!-- HERO — texte à gauche ; à droite, carte de prix puis photo    -->
   <!-- ============================================================ -->
   <section class="mx-auto max-w-content px-6 pt-14 pb-24 md:pt-20 md:pb-24">
-    <div class="grid gap-8 md:grid-cols-2 md:gap-12">
+    <div class="grid gap-8 md:grid-cols-2 md:gap-12 items-start">
 
-      <!-- Colonne texte : occupe les deux lignes de la grille desktop -->
-      <div class="md:row-span-2">
+      <!-- Colonne texte -->
+      <div>
         <p class="eyebrow mb-4">Dépannage — Le Rouret & arrière-pays niçois</p>
         <h1 class="text-4xl md:text-5xl leading-[1.1] mb-6">
           Dépannage électrique — Le Rouret & arrière-pays niçois
@@ -156,35 +156,35 @@
         <p class="text-sm text-ink-muted">Réponse sous 24 h ouvrées.</p>
       </div>
 
-      <!-- Carte d'offre (élément signature) : en haut de la colonne droite, prix massif façon Peterman -->
-      <div class="md:col-start-2 md:row-start-1 bg-bone border border-line rounded shadow-lg p-6 md:p-8 text-center">
-        <p class="eyebrow mb-2">Diagnostic de panne</p>
-        <p class="font-serif text-8xl md:text-9xl text-accent mb-2 leading-none">89 €</p>
-        <p class="text-sm text-ink-muted mb-4">Déduit si vous nous confiez la réparation.</p>
+      <!-- Carte d'offre (élément signature), un seul bloc : photo en miniature, prix massif en premier repère visuel -->
+      <div class="bg-bone border border-line rounded shadow-lg overflow-hidden text-center">
+        <img
+          src="../assets/img/depannage-hero.jpg"
+          alt="Tableau électrique ouvert en cours de dépannage par Solazura, disjoncteurs et câblage apparents"
+          width="1800"
+          height="2400"
+          class="w-full h-32 md:h-36 object-cover"
+          loading="eager"
+          fetchpriority="high"
+        />
+        <div class="p-6 md:p-8">
+          <p class="eyebrow mb-2">Diagnostic de panne</p>
+          <p class="font-serif text-8xl md:text-9xl text-accent mb-2 leading-none">89 €</p>
+          <p class="text-sm text-ink-muted mb-4">Déduit si vous nous confiez la réparation.</p>
 
-        <details class="mb-4 text-sm text-left">
-          <summary class="cursor-pointer text-accent font-medium text-center">Voir le détail de l'offre</summary>
-          <p class="text-ink-muted mt-2">
-            Le déplacement et le diagnostic sont couverts par ce forfait. La réparation identifiée est ensuite chiffrée et validée avec vous avant d'être réalisée. Si vous nous la confiez (à partir d'environ 150 € de travaux), les 89 € sont déduits du montant final.
-          </p>
-        </details>
+          <details class="mb-4 text-sm text-left">
+            <summary class="cursor-pointer text-accent font-medium text-center">Voir le détail de l'offre</summary>
+            <p class="text-ink-muted mt-2">
+              Le déplacement et le diagnostic sont couverts par ce forfait. La réparation identifiée est ensuite chiffrée et validée avec vous avant d'être réalisée. Si vous nous la confiez (à partir d'environ 150 € de travaux), les 89 € sont déduits du montant final.
+            </p>
+          </details>
 
-        <div class="flex flex-col gap-2">
-          <a href="../index.html#contact" class="btn-primary w-full">Réserver ce diagnostic</a>
-          <a href="tel:+33609219702" class="btn-secondary w-full">Appeler maintenant</a>
+          <div class="flex flex-col gap-2">
+            <a href="../index.html#contact" class="btn-primary w-full">Réserver ce diagnostic</a>
+            <a href="tel:+33609219702" class="btn-secondary w-full">Appeler maintenant</a>
+          </div>
         </div>
       </div>
-
-      <!-- Photo : sous la carte en desktop, dernière en mobile -->
-      <img
-        src="../assets/img/depannage-hero.jpg"
-        alt="Tableau électrique ouvert en cours de dépannage par Solazura, disjoncteurs et câblage apparents"
-        width="1800"
-        height="2400"
-        class="md:col-start-2 md:row-start-2 rounded object-cover w-full aspect-[4/5]"
-        loading="eager"
-        fetchpriority="high"
-      />
 
     </div>
   </section>
