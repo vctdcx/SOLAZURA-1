@@ -128,30 +128,84 @@
 <main id="contenu">
 
   <!-- ============================================================ -->
-  <!-- HERO — gabarit page d'offre : photo verticale + bloc prix     -->
+  <!-- HERO MOBILE — photo plein cadre, carte de prix + Google, tout tient à l'écran -->
   <!-- ============================================================ -->
-  <section class="mx-auto max-w-content px-6 pt-10 pb-16 md:pt-20 md:pb-24">
-    <div class="grid gap-6 md:grid-cols-2 md:gap-12">
+  <section class="relative md:hidden overflow-hidden">
+    <img
+      src="../assets/img/depannage-hero.jpg"
+      alt="Tableau électrique ouvert en cours de dépannage par Solazura, disjoncteurs et câblage apparents"
+      width="1800"
+      height="2400"
+      class="absolute inset-0 w-full h-full object-cover"
+      loading="eager"
+      fetchpriority="high"
+    />
+    <div class="absolute inset-0 bg-gradient-to-b from-ink/85 via-ink/55 to-ink/70"></div>
 
-      <!-- Titre : compact sur mobile, le prix est la vedette du premier écran -->
-      <div class="order-1 md:order-none md:col-start-2 md:row-start-1">
-        <p class="eyebrow mb-3 md:mb-4">Dépannage — Le Rouret & arrière-pays niçois</p>
-        <h1 class="text-3xl md:text-5xl leading-[1.15] md:leading-[1.1] mb-4 md:mb-6">
+    <div class="relative px-5 pt-6 pb-6 flex flex-col">
+      <p class="eyebrow text-white/80 text-xs mb-2">Dépannage — Le Rouret & arrière-pays niçois</p>
+      <h1 class="text-white text-[1.7rem] leading-[1.2] mb-2">
+        Dépannage électrique — Le Rouret & arrière-pays niçois
+      </h1>
+      <p class="text-white/85 text-sm mb-5">
+        On identifie la cause, prix annoncé avant travaux.
+      </p>
+
+      <!-- Carte de prix, élément dominant du premier écran -->
+      <div class="w-full bg-bone rounded shadow-xl overflow-hidden">
+        <div class="px-5 pt-5 pb-3 text-center">
+          <p class="eyebrow mb-1">Diagnostic de panne</p>
+          <p class="font-serif text-6xl text-accent leading-none mb-1">89 €</p>
+          <p class="text-xs text-ink-muted">Déduit si vous nous confiez la réparation.</p>
+        </div>
+
+        <details>
+          <summary class="cursor-pointer text-center text-accent text-xs font-medium py-2 bg-accent-soft list-none">Voir le détail de l'offre +</summary>
+          <p class="text-xs text-ink-muted px-5 pb-4 pt-1">
+            Le déplacement et le diagnostic sont couverts par ce forfait. La réparation identifiée est chiffrée et validée avant d'être réalisée. Confiée à Solazura (à partir d'environ 150 € de travaux), les 89 € sont déduits du montant final.
+          </p>
+        </details>
+
+        <div class="flex border-t border-line">
+          <a href="../index.html#contact" class="flex-1 flex items-center justify-center bg-accent text-white text-sm font-medium py-3">Réserver</a>
+          <a href="tel:+33609219702" class="flex-1 flex items-center justify-center border-l border-line text-ink text-sm font-medium py-3">
+            <span aria-hidden="true" class="mr-1.5">&#9742;</span>06 09 21 97 02
+          </a>
+        </div>
+      </div>
+
+      <!-- Note Google, juste sous la carte -->
+      <div class="self-center mt-4 inline-flex items-center gap-2 bg-bone rounded-full px-4 py-2 shadow-md">
+        <svg width="16" height="16" viewBox="0 0 18 18" aria-hidden="true"><path fill="#4285F4" d="M17.64 9.2c0-.64-.06-1.25-.16-1.84H9v3.48h4.84c-.21 1.13-.84 2.08-1.8 2.72v2.26h2.91c1.7-1.57 2.69-3.88 2.69-6.62z"/><path fill="#34A853" d="M9 18c2.43 0 4.47-.81 5.96-2.18l-2.91-2.26c-.81.54-1.84.86-3.05.86-2.34 0-4.33-1.58-5.04-3.71H.96v2.33C2.44 15.98 5.48 18 9 18z"/><path fill="#FBBC05" d="M3.96 10.71a5.4 5.4 0 010-3.42V4.96H.96a9 9 0 000 8.08l3-2.33z"/><path fill="#EA4335" d="M9 3.58c1.32 0 2.51.45 3.44 1.35l2.58-2.58C13.46.89 11.43 0 9 0 5.48 0 2.44 2.02.96 4.96l3 2.33C4.67 5.16 6.66 3.58 9 3.58z"/></svg>
+        <span class="text-accent text-xs" aria-hidden="true">★★★★★</span>
+        <span class="text-xs text-ink-muted whitespace-nowrap">+20 avis 5 étoiles</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- HERO DESKTOP — photo verticale + bloc prix, inchangé          -->
+  <!-- ============================================================ -->
+  <section class="hidden md:block mx-auto max-w-content px-6 pt-20 pb-24">
+    <div class="grid gap-12 md:grid-cols-2">
+
+      <div class="md:col-start-2 md:row-start-1">
+        <p class="eyebrow mb-4">Dépannage — Le Rouret & arrière-pays niçois</p>
+        <h1 class="text-5xl leading-[1.1] mb-6">
           Dépannage électrique — Le Rouret & arrière-pays niçois
         </h1>
-        <p class="text-base md:text-lg text-ink-muted max-w-lg">
+        <p class="text-lg text-ink-muted max-w-lg">
           Panne, coupure, disjoncteur qui saute : on identifie la cause, prix annoncé avant travaux, à chaque fois.
         </p>
       </div>
 
-      <!-- Carte de prix : sur mobile, juste après le titre, avant la photo -->
-      <div class="order-2 md:order-none md:col-start-2 md:row-start-2 bg-bone-2 border border-line rounded p-6 md:p-8 text-center md:text-left">
+      <div class="md:col-start-2 md:row-start-2 bg-bone-2 border border-line rounded p-8">
         <p class="eyebrow mb-3">Diagnostic de panne</p>
-        <p class="font-serif text-8xl md:text-9xl text-accent mb-3 leading-none">89 €</p>
+        <p class="font-serif text-9xl text-accent mb-3 leading-none">89 €</p>
         <p class="text-sm text-ink-muted mb-5">Déduit si vous nous confiez la réparation.</p>
 
-        <details class="mb-5 text-sm text-left">
-          <summary class="cursor-pointer text-accent font-medium text-center md:text-left">Voir le détail de l'offre</summary>
+        <details class="mb-5 text-sm">
+          <summary class="cursor-pointer text-accent font-medium">Voir le détail de l'offre</summary>
           <p class="text-ink-muted mt-2">
             Le déplacement et le diagnostic sont couverts par ce forfait. La réparation identifiée est ensuite chiffrée et validée avec vous avant d'être réalisée. Si vous nous la confiez (à partir d'environ 150 € de travaux), les 89 € sont déduits du montant final.
           </p>
@@ -165,8 +219,7 @@
         <p class="text-xs text-ink-muted">Réponse sous 24 h ouvrées.</p>
       </div>
 
-      <!-- Photo : ratio fixe pour préserver le cadrage, jamais étirée ni écrasée -->
-      <div class="order-3 md:order-none md:col-start-1 md:row-start-1 md:row-span-2 md:self-start rounded overflow-hidden border border-line aspect-[3/4]">
+      <div class="md:col-start-1 md:row-start-1 md:row-span-2 md:self-start rounded overflow-hidden border border-line aspect-[3/4]">
         <img
           src="../assets/img/depannage-hero.jpg"
           alt="Tableau électrique ouvert en cours de dépannage par Solazura, disjoncteurs et câblage apparents"
