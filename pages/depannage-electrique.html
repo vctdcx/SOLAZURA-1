@@ -128,69 +128,119 @@
 <main id="contenu">
 
   <!-- ============================================================ -->
-  <!-- HERO — photo pleine largeur, texte + carte de prix par-dessus -->
+  <!-- HERO — texte à gauche ; à droite, carte de prix puis photo    -->
   <!-- ============================================================ -->
-  <section class="relative overflow-hidden min-h-[560px] md:min-h-[520px]">
-    <img
-      src="../assets/img/depannage-hero.jpg"
-      alt="Tableau électrique ouvert en cours de dépannage par Solazura, disjoncteurs et câblage apparents"
-      width="1800"
-      height="2400"
-      class="absolute inset-0 w-full h-full object-cover"
-      loading="eager"
-      fetchpriority="high"
-    />
-    <!-- Voile de lisibilité : uniforme sur mobile, dégradé latéral sur desktop -->
-    <div class="absolute inset-0 bg-ink/60 md:hidden"></div>
-    <div class="absolute inset-0 hidden md:block bg-gradient-to-r from-ink via-ink/55 to-ink/10"></div>
+  <section class="mx-auto max-w-content px-6 pt-14 pb-24 md:pt-20 md:pb-24">
+    <div class="grid gap-8 md:grid-cols-2 md:gap-12">
 
-    <div class="relative mx-auto max-w-content px-6 py-14 md:py-20 min-h-[560px] md:min-h-[520px] flex flex-col justify-center">
-      <div class="grid gap-8 md:grid-cols-2 md:gap-12 items-start">
+      <!-- Colonne texte : occupe les deux lignes de la grille desktop -->
+      <div class="md:row-span-2">
+        <p class="eyebrow mb-4">Dépannage — Le Rouret & arrière-pays niçois</p>
+        <h1 class="text-4xl md:text-5xl leading-[1.1] mb-6">
+          Dépannage électrique — Le Rouret & arrière-pays niçois
+        </h1>
+        <p class="text-lg text-ink-muted mb-6 max-w-lg">
+          Panne, coupure, disjoncteur qui saute : on identifie la cause, prix annoncé avant travaux, à chaque fois.
+        </p>
 
-        <!-- Texte, en blanc sur le voile -->
-        <div>
-          <p class="eyebrow mb-4 text-white/80">Dépannage — Le Rouret & arrière-pays niçois</p>
-          <h1 class="text-4xl md:text-5xl leading-[1.1] mb-6 text-white">
-            Dépannage électrique — Le Rouret & arrière-pays niçois
-          </h1>
-          <p class="text-lg text-white/85 mb-6 max-w-lg">
-            Panne, coupure, disjoncteur qui saute : on identifie la cause, prix annoncé avant travaux, à chaque fois.
-          </p>
+        <p class="text-xl mb-8">
+          Diagnostic de panne : <span class="text-accent font-serif font-semibold">89 €</span> — déduit si vous confiez la réparation.
+        </p>
 
-          <p class="text-xl mb-8 text-white">
-            Diagnostic de panne : <span class="font-serif font-semibold">89 €</span> — déduit si vous confiez la réparation.
-          </p>
-
-          <div class="flex flex-wrap items-center gap-4 mb-2">
-            <a href="tel:+33609219702" class="btn-primary text-base px-8 py-4">
-              <span aria-hidden="true">&#9742;</span> 06 09 21 97 02
-            </a>
-            <a href="../index.html#contact" class="btn bg-white text-ink hover:bg-bone-2">Réserver en ligne</a>
-          </div>
-          <p class="text-sm text-white/70">Réponse sous 24 h ouvrées.</p>
+        <div class="flex flex-wrap items-center gap-4 mb-2">
+          <a href="tel:+33609219702" class="btn-primary text-base px-8 py-4">
+            <span aria-hidden="true">&#9742;</span> 06 09 21 97 02
+          </a>
+          <a href="../index.html#contact" class="btn-secondary">Réserver en ligne</a>
         </div>
+        <p class="text-sm text-ink-muted">Réponse sous 24 h ouvrées.</p>
+      </div>
 
-        <!-- Carte d'offre (élément signature), posée sur la photo -->
-        <div class="bg-bone rounded shadow-xl p-6 md:p-8">
-          <p class="eyebrow mb-1">Diagnostic de panne</p>
-          <p class="font-serif text-6xl md:text-7xl text-accent mb-1 leading-none">89 €</p>
-          <p class="text-sm text-ink-muted mb-4">Déduit si vous nous confiez la réparation.</p>
+      <!-- Carte d'offre (élément signature) : en haut de la colonne droite, prix massif façon Peterman -->
+      <div class="md:col-start-2 md:row-start-1 bg-bone border border-line rounded shadow-lg p-6 md:p-8 text-center">
+        <p class="eyebrow mb-2">Diagnostic de panne</p>
+        <p class="font-serif text-8xl md:text-9xl text-accent mb-2 leading-none">89 €</p>
+        <p class="text-sm text-ink-muted mb-4">Déduit si vous nous confiez la réparation.</p>
 
-          <details class="mb-4 text-sm">
-            <summary class="cursor-pointer text-accent font-medium">Voir le détail de l'offre</summary>
-            <p class="text-ink-muted mt-2">
-              Le déplacement et le diagnostic sont couverts par ce forfait. La réparation identifiée est ensuite chiffrée et validée avec vous avant d'être réalisée. Si vous nous la confiez (à partir d'environ 150 € de travaux), les 89 € sont déduits du montant final.
-            </p>
-          </details>
+        <details class="mb-4 text-sm text-left">
+          <summary class="cursor-pointer text-accent font-medium text-center">Voir le détail de l'offre</summary>
+          <p class="text-ink-muted mt-2">
+            Le déplacement et le diagnostic sont couverts par ce forfait. La réparation identifiée est ensuite chiffrée et validée avec vous avant d'être réalisée. Si vous nous la confiez (à partir d'environ 150 € de travaux), les 89 € sont déduits du montant final.
+          </p>
+        </details>
 
-          <div class="flex flex-col gap-2">
-            <a href="../index.html#contact" class="btn-primary w-full">Réserver ce diagnostic</a>
-            <a href="tel:+33609219702" class="btn-secondary w-full">Appeler maintenant</a>
-          </div>
+        <div class="flex flex-col gap-2">
+          <a href="../index.html#contact" class="btn-primary w-full">Réserver ce diagnostic</a>
+          <a href="tel:+33609219702" class="btn-secondary w-full">Appeler maintenant</a>
         </div>
+      </div>
 
+      <!-- Photo : sous la carte en desktop, dernière en mobile -->
+      <img
+        src="../assets/img/depannage-hero.jpg"
+        alt="Tableau électrique ouvert en cours de dépannage par Solazura, disjoncteurs et câblage apparents"
+        width="1800"
+        height="2400"
+        class="md:col-start-2 md:row-start-2 rounded object-cover w-full aspect-[4/5]"
+        loading="eager"
+        fetchpriority="high"
+      />
+
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- AVIS GOOGLE — juste après le hero, pour la confiance immédiate -->
+  <!-- ============================================================ -->
+  <section class="section">
+    <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+      <div>
+        <p class="eyebrow mb-3">Avis</p>
+        <h2 class="text-3xl md:text-4xl">Ce qu'en disent nos clients</h2>
+      </div>
+      <div class="flex items-center gap-3 bg-bone-2 border border-line rounded px-4 py-2">
+        <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path fill="#4285F4" d="M17.64 9.2c0-.64-.06-1.25-.16-1.84H9v3.48h4.84c-.21 1.13-.84 2.08-1.8 2.72v2.26h2.91c1.7-1.57 2.69-3.88 2.69-6.62z"/><path fill="#34A853" d="M9 18c2.43 0 4.47-.81 5.96-2.18l-2.91-2.26c-.81.54-1.84.86-3.05.86-2.34 0-4.33-1.58-5.04-3.71H.96v2.33C2.44 15.98 5.48 18 9 18z"/><path fill="#FBBC05" d="M3.96 10.71a5.4 5.4 0 010-3.42V4.96H.96a9 9 0 000 8.08l3-2.33z"/><path fill="#EA4335" d="M9 3.58c1.32 0 2.51.45 3.44 1.35l2.58-2.58C13.46.89 11.43 0 9 0 5.48 0 2.44 2.02.96 4.96l3 2.33C4.67 5.16 6.66 3.58 9 3.58z"/></svg>
+        <span class="text-accent" aria-hidden="true">★★★★★</span>
+        <span class="text-sm text-ink-muted">+20 avis 5 étoiles sur Google</span>
       </div>
     </div>
+
+    <div class="grid md:grid-cols-3 gap-8 mb-10">
+      <blockquote class="bg-bone-2 border border-line rounded p-6 flex flex-col">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-11 h-11 rounded-full bg-accent-soft text-accent font-serif text-lg flex items-center justify-center shrink-0" aria-hidden="true">AI</div>
+          <div class="min-w-0">
+            <p class="text-sm font-medium truncate">Andrea Ippolito</p>
+            <p class="text-xs text-ink-muted">Local Guide · 117 avis</p>
+          </div>
+        </div>
+        <p class="text-accent text-sm mb-3" aria-hidden="true">★★★★★</p>
+        <p class="text-sm text-ink-muted flex-1">« Très réactif, bonne communication et travail soigné, je suis entièrement satisfait de la prestation et je recommande sans hésitation ! Tarif correct. »</p>
+      </blockquote>
+      <blockquote class="bg-bone-2 border border-line rounded p-6 flex flex-col">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-11 h-11 rounded-full bg-accent-soft text-accent font-serif text-lg flex items-center justify-center shrink-0" aria-hidden="true">PG</div>
+          <div class="min-w-0">
+            <p class="text-sm font-medium truncate">Pierre Gainon</p>
+            <p class="text-xs text-ink-muted">2 avis</p>
+          </div>
+        </div>
+        <p class="text-accent text-sm mb-3" aria-hidden="true">★★★★★</p>
+        <p class="text-sm text-ink-muted flex-1">« Je conseille vivement. Intervention rapide et efficace. Personne très sympathique qui connaît bien son travail. Sans hésitation je vous le conseille. »</p>
+      </blockquote>
+      <blockquote class="bg-bone-2 border border-line rounded p-6 flex flex-col">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-11 h-11 rounded-full bg-accent-soft text-accent font-serif text-lg flex items-center justify-center shrink-0" aria-hidden="true">TJ</div>
+          <div class="min-w-0">
+            <p class="text-sm font-medium truncate">Thomas Jouffroy</p>
+            <p class="text-xs text-ink-muted">Local Guide · 52 avis</p>
+          </div>
+        </div>
+        <p class="text-accent text-sm mb-3" aria-hidden="true">★★★★★</p>
+        <p class="text-sm text-ink-muted flex-1">« Efficace, rapide et professionnel. »</p>
+      </blockquote>
+    </div>
+    <a href="https://www.google.com/search?q=Solazura" class="text-accent hover:underline text-sm" target="_blank" rel="noopener">Voir tous les avis sur Google →</a>
   </section>
 
   <!-- ============================================================ -->
@@ -296,60 +346,6 @@
       <a href="../index.html#contact" class="btn-primary">Réserver un diagnostic</a>
       <a href="tel:+33609219702" class="btn-secondary">Appeler — 06 09 21 97 02</a>
     </div>
-  </section>
-
-  <!-- ============================================================ -->
-  <!-- AVIS GOOGLE                                                   -->
-  <!-- ============================================================ -->
-  <section class="section">
-    <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
-      <div>
-        <p class="eyebrow mb-3">Avis</p>
-        <h2 class="text-3xl md:text-4xl">Ce qu'en disent nos clients</h2>
-      </div>
-      <div class="flex items-center gap-3 bg-bone-2 border border-line rounded px-4 py-2">
-        <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path fill="#4285F4" d="M17.64 9.2c0-.64-.06-1.25-.16-1.84H9v3.48h4.84c-.21 1.13-.84 2.08-1.8 2.72v2.26h2.91c1.7-1.57 2.69-3.88 2.69-6.62z"/><path fill="#34A853" d="M9 18c2.43 0 4.47-.81 5.96-2.18l-2.91-2.26c-.81.54-1.84.86-3.05.86-2.34 0-4.33-1.58-5.04-3.71H.96v2.33C2.44 15.98 5.48 18 9 18z"/><path fill="#FBBC05" d="M3.96 10.71a5.4 5.4 0 010-3.42V4.96H.96a9 9 0 000 8.08l3-2.33z"/><path fill="#EA4335" d="M9 3.58c1.32 0 2.51.45 3.44 1.35l2.58-2.58C13.46.89 11.43 0 9 0 5.48 0 2.44 2.02.96 4.96l3 2.33C4.67 5.16 6.66 3.58 9 3.58z"/></svg>
-        <span class="text-accent" aria-hidden="true">★★★★★</span>
-        <span class="text-sm text-ink-muted">+20 avis 5 étoiles sur Google</span>
-      </div>
-    </div>
-
-    <div class="grid md:grid-cols-3 gap-8 mb-10">
-      <blockquote class="bg-bone-2 border border-line rounded p-6 flex flex-col">
-        <div class="flex items-center gap-3 mb-4">
-          <div class="w-11 h-11 rounded-full bg-accent-soft text-accent font-serif text-lg flex items-center justify-center shrink-0" aria-hidden="true">AI</div>
-          <div class="min-w-0">
-            <p class="text-sm font-medium truncate">Andrea Ippolito</p>
-            <p class="text-xs text-ink-muted">Local Guide · 117 avis</p>
-          </div>
-        </div>
-        <p class="text-accent text-sm mb-3" aria-hidden="true">★★★★★</p>
-        <p class="text-sm text-ink-muted flex-1">« Très réactif, bonne communication et travail soigné, je suis entièrement satisfait de la prestation et je recommande sans hésitation ! Tarif correct. »</p>
-      </blockquote>
-      <blockquote class="bg-bone-2 border border-line rounded p-6 flex flex-col">
-        <div class="flex items-center gap-3 mb-4">
-          <div class="w-11 h-11 rounded-full bg-accent-soft text-accent font-serif text-lg flex items-center justify-center shrink-0" aria-hidden="true">PG</div>
-          <div class="min-w-0">
-            <p class="text-sm font-medium truncate">Pierre Gainon</p>
-            <p class="text-xs text-ink-muted">2 avis</p>
-          </div>
-        </div>
-        <p class="text-accent text-sm mb-3" aria-hidden="true">★★★★★</p>
-        <p class="text-sm text-ink-muted flex-1">« Je conseille vivement. Intervention rapide et efficace. Personne très sympathique qui connaît bien son travail. Sans hésitation je vous le conseille. »</p>
-      </blockquote>
-      <blockquote class="bg-bone-2 border border-line rounded p-6 flex flex-col">
-        <div class="flex items-center gap-3 mb-4">
-          <div class="w-11 h-11 rounded-full bg-accent-soft text-accent font-serif text-lg flex items-center justify-center shrink-0" aria-hidden="true">TJ</div>
-          <div class="min-w-0">
-            <p class="text-sm font-medium truncate">Thomas Jouffroy</p>
-            <p class="text-xs text-ink-muted">Local Guide · 52 avis</p>
-          </div>
-        </div>
-        <p class="text-accent text-sm mb-3" aria-hidden="true">★★★★★</p>
-        <p class="text-sm text-ink-muted flex-1">« Efficace, rapide et professionnel. »</p>
-      </blockquote>
-    </div>
-    <a href="https://www.google.com/search?q=Solazura" class="text-accent hover:underline text-sm" target="_blank" rel="noopener">Voir tous les avis sur Google →</a>
   </section>
 
   <!-- ============================================================ -->
