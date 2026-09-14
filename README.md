@@ -36,7 +36,7 @@ Cherchez `[PLACEHOLDER` dans `index.html` :
 - Note Google, nombre d'avis, 3 avis réels, URL de la fiche Google Business
 - Nombre d'interventions réalisées
 - Certifications (Qualifelec IRVE, habilitations)
-- Photo du tableau électrique (hero) et photo de Victor devant le camion floqué
+- Photo de Victor devant le camion floqué (photo du tableau électrique en hero : faite)
 - Liens réseaux sociaux
 - Nom de domaine définitif (à reporter dans `canonical`, `og:url`, `og:image`, `sitemap.xml`, `robots.txt`, JSON-LD)
 - Outil de réservation en ligne (actuellement, tous les CTA « Réserver » pointent vers le formulaire de contact en bas de page — le formulaire n'a pas encore de traitement d'envoi côté serveur)
