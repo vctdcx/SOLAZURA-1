@@ -674,17 +674,18 @@
 <div
   data-consent-banner
   hidden
-  class="fixed bottom-0 inset-x-0 z-[70] bg-ink text-white px-6 py-5"
+  class="fixed bottom-0 inset-x-0 z-[70] bg-ink text-white px-4 py-3 md:px-6 md:py-5"
   role="dialog"
   aria-label="Consentement aux cookies"
 >
-  <div class="mx-auto max-w-content flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
-    <p class="text-sm text-white/80">
-      Nous utilisons un cookie de mesure publicitaire (Google Ads) uniquement après votre accord. Voir notre <a href="pages/mentions-legales.html" class="underline">politique de confidentialité</a>.
+  <div class="mx-auto max-w-content flex flex-row items-center justify-between gap-3 md:gap-4">
+    <p class="text-xs md:text-sm text-white/80">
+      <span class="md:hidden">Cookie de mesure publicitaire (Google Ads).</span>
+      <span class="hidden md:inline">Nous utilisons un cookie de mesure publicitaire (Google Ads) uniquement après votre accord. Voir notre <a href="pages/mentions-legales.html" class="underline">politique de confidentialité</a>.</span>
     </p>
-    <div class="flex gap-3 shrink-0">
-      <button type="button" data-consent-decline class="btn border border-white/40 text-white hover:bg-white/10">Refuser</button>
-      <button type="button" data-consent-accept class="btn bg-white text-ink hover:bg-bone-2">Accepter</button>
+    <div class="flex gap-2 md:gap-3 shrink-0">
+      <button type="button" data-consent-decline class="btn !px-3 !py-1.5 text-xs md:!px-6 md:!py-3 md:text-sm border border-white/40 text-white hover:bg-white/10">Refuser</button>
+      <button type="button" data-consent-accept class="btn !px-3 !py-1.5 text-xs md:!px-6 md:!py-3 md:text-sm bg-white text-ink hover:bg-bone-2">Accepter</button>
     </div>
   </div>
 </div>
