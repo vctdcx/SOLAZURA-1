@@ -128,56 +128,47 @@
 <main id="contenu">
 
   <!-- ============================================================ -->
-  <!-- HERO MOBILE — bannière recadrée sur Victor en bandeau, carte en flux -->
+  <!-- HERO MOBILE — bannière en fond (zoom sur Victor/camion à droite), l'essentiel seulement -->
   <!-- ============================================================ -->
-  <section class="md:hidden">
+  <section class="relative md:hidden overflow-hidden min-h-[600px]">
     <img
       src="../assets/img/banniere-solazura.jpg"
       alt="Victor Decoux devant le camion floqué Solazura"
       width="2141"
       height="734"
-      class="w-full h-56 object-cover object-[80%_50%]"
+      class="absolute inset-0 w-full h-full object-cover object-[78%_45%]"
       loading="eager"
       fetchpriority="high"
     />
+    <div class="absolute inset-0 bg-ink/70"></div>
 
-    <div class="bg-bone px-5 pt-6 pb-6">
-      <p class="eyebrow text-xs mb-2">Dépannage — Le Rouret & arrière-pays niçois</p>
-      <h1 class="text-3xl leading-[1.2] mb-2">
+    <div class="relative px-5 pt-8 pb-8 flex flex-col">
+      <p class="eyebrow text-white/80 text-xs mb-2">Dépannage — Le Rouret & arrière-pays niçois</p>
+      <h1 class="text-white text-3xl leading-[1.2] mb-6">
         Dépannage électrique — Le Rouret & arrière-pays niçois
       </h1>
-      <p class="text-sm text-ink-muted mb-5">
-        On identifie la cause, prix annoncé avant travaux.
-      </p>
 
-      <!-- Carte de prix, empilée dans le flux — jamais superposée sur mobile -->
-      <div class="w-full bg-bone-2 border border-line rounded shadow-sm overflow-hidden">
-        <div class="px-5 pt-5 pb-3 text-center">
-          <p class="eyebrow mb-1">Diagnostic de panne</p>
-          <p class="font-serif text-7xl text-accent leading-none mb-1">89 €</p>
+      <!-- Carte de prix : l'essentiel seulement, prix centré -->
+      <div class="w-full bg-bone rounded shadow-xl overflow-hidden text-center">
+        <div class="px-5 pt-6 pb-5">
+          <p class="eyebrow mb-2">Diagnostic de panne</p>
+          <p class="font-serif text-7xl text-accent leading-none mb-2">89 €</p>
           <p class="text-xs text-ink-muted">Déduit si vous nous confiez la réparation.</p>
         </div>
 
-        <details>
-          <summary class="cursor-pointer text-center text-accent text-xs font-medium py-2 bg-accent-soft list-none">Voir le détail de l'offre +</summary>
-          <p class="text-xs text-ink-muted px-5 pb-4 pt-1">
-            Le déplacement et le diagnostic sont couverts par ce forfait. La réparation identifiée est chiffrée et validée avant d'être réalisée. Confiée à Solazura (à partir d'environ 150 € de travaux), les 89 € sont déduits du montant final.
-          </p>
-        </details>
-
         <div class="flex border-t border-line">
-          <a href="../index.html#contact" class="flex-1 flex items-center justify-center bg-accent text-white text-sm font-medium py-3">Réserver</a>
-          <a href="tel:+33609219702" class="flex-1 flex items-center justify-center border-l border-line text-ink text-sm font-medium py-3">
+          <a href="../index.html#contact" class="flex-1 flex items-center justify-center bg-accent text-white text-sm font-medium py-3.5">Réserver</a>
+          <a href="tel:+33609219702" class="flex-1 flex items-center justify-center border-l border-line text-ink text-sm font-medium py-3.5">
             <span aria-hidden="true" class="mr-1.5">&#9742;</span>06 09 21 97 02
           </a>
         </div>
       </div>
 
-      <!-- Note Google, juste sous la carte -->
-      <div class="self-center mt-4 inline-flex items-center gap-2 bg-bone border border-line rounded-full px-4 py-2">
+      <!-- Rappel avis Google -->
+      <div class="self-center mt-5 inline-flex items-center gap-2 bg-bone rounded-full px-4 py-2 shadow-md">
         <svg width="16" height="16" viewBox="0 0 18 18" aria-hidden="true"><path fill="#4285F4" d="M17.64 9.2c0-.64-.06-1.25-.16-1.84H9v3.48h4.84c-.21 1.13-.84 2.08-1.8 2.72v2.26h2.91c1.7-1.57 2.69-3.88 2.69-6.62z"/><path fill="#34A853" d="M9 18c2.43 0 4.47-.81 5.96-2.18l-2.91-2.26c-.81.54-1.84.86-3.05.86-2.34 0-4.33-1.58-5.04-3.71H.96v2.33C2.44 15.98 5.48 18 9 18z"/><path fill="#FBBC05" d="M3.96 10.71a5.4 5.4 0 010-3.42V4.96H.96a9 9 0 000 8.08l3-2.33z"/><path fill="#EA4335" d="M9 3.58c1.32 0 2.51.45 3.44 1.35l2.58-2.58C13.46.89 11.43 0 9 0 5.48 0 2.44 2.02.96 4.96l3 2.33C4.67 5.16 6.66 3.58 9 3.58z"/></svg>
         <span class="text-accent text-xs" aria-hidden="true">★★★★★</span>
-        <span class="text-xs text-ink-muted whitespace-nowrap">+20 avis 5 étoiles</span>
+        <span class="text-xs text-ink-muted whitespace-nowrap">+20 avis 5 étoiles sur Google</span>
       </div>
     </div>
   </section>
