@@ -2,6 +2,15 @@
   "use strict";
 
   /* ---------------------------------------------------- */
+  /* Chaque page démarre en haut, jamais sur le scroll     */
+  /* restauré d'une visite précédente (bfcache / historique) */
+  /* ---------------------------------------------------- */
+  if ("scrollRestoration" in history) {
+    history.scrollRestoration = "manual";
+  }
+  window.scrollTo(0, 0);
+
+  /* ---------------------------------------------------- */
   /* Menu mobile accessible                                */
   /* ---------------------------------------------------- */
   var toggle = document.querySelector("[data-menu-toggle]");
