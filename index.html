@@ -654,7 +654,15 @@
         </dl>
       </div>
 
-      <form class="border border-line rounded p-8 space-y-5" aria-label="Formulaire de contact">
+      <form
+        id="contact-form"
+        data-contact-form
+        action="https://formspree.io/f/mzezpgdv"
+        method="POST"
+        class="border border-line rounded p-8 space-y-5"
+        aria-label="Formulaire de contact"
+      >
+        <input type="hidden" name="_subject" value="Nouvelle demande — Solazura" />
         <div>
           <label for="name" class="block text-sm font-medium mb-1">Nom</label>
           <input type="text" id="name" name="name" required class="w-full border border-line rounded px-4 py-2 bg-bone focus-visible:outline-accent" />
@@ -680,8 +688,9 @@
           <label for="message" class="block text-sm font-medium mb-1">Message</label>
           <textarea id="message" name="message" rows="4" class="w-full border border-line rounded px-4 py-2 bg-bone focus-visible:outline-accent"></textarea>
         </div>
-        <button type="submit" class="btn-primary w-full">Envoyer la demande</button>
-        <p class="text-xs text-ink-muted"><!-- PLACEHOLDER : ce formulaire nécessite un traitement d'envoi (backend / service tiers) avant mise en production --></p>
+        <button type="submit" data-contact-submit class="btn-primary w-full">Envoyer la demande</button>
+        <p data-contact-success hidden class="text-sm text-accent">Votre demande a bien été envoyée. Nous vous répondons sous 24 h ouvrées.</p>
+        <p data-contact-error hidden class="text-sm text-red-700">Une erreur est survenue. Vous pouvez réessayer ou nous appeler au <a href="tel:+33609219702" class="underline">06 09 21 97 02</a>.</p>
       </form>
     </div>
   </section>

@@ -122,6 +122,49 @@
   });
 
   /* ---------------------------------------------------- */
+  /* Formulaire de contact (Formspree)                     */
+  /* ---------------------------------------------------- */
+  var contactForm = document.querySelector("[data-contact-form]");
+  if (contactForm) {
+    var contactSubmit = contactForm.querySelector("[data-contact-submit]");
+    var contactSuccess = contactForm.querySelector("[data-contact-success]");
+    var contactError = contactForm.querySelector("[data-contact-error]");
+
+    contactForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+      if (contactSuccess) contactSuccess.hidden = true;
+      if (contactError) contactError.hidden = true;
+      if (contactSubmit) {
+        contactSubmit.disabled = true;
+        contactSubmit.textContent = "Envoi en cours…";
+      }
+
+      fetch(contactForm.action, {
+        method: "POST",
+        body: new FormData(contactForm),
+        headers: { Accept: "application/json" },
+      })
+        .then(function (response) {
+          if (response.ok) {
+            contactForm.reset();
+            if (contactSuccess) contactSuccess.hidden = false;
+          } else if (contactError) {
+            contactError.hidden = false;
+          }
+        })
+        .catch(function () {
+          if (contactError) contactError.hidden = false;
+        })
+        .finally(function () {
+          if (contactSubmit) {
+            contactSubmit.disabled = false;
+            contactSubmit.textContent = "Envoyer la demande";
+          }
+        });
+    });
+  }
+
+  /* ---------------------------------------------------- */
   /* Liens tel: — jamais bloquer la navigation              */
   /* Le suivi de conversion se déclenche en parallèle,      */
   /* sans jamais empêcher la composition du numéro.         */
