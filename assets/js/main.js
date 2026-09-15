@@ -9,6 +9,9 @@
     history.scrollRestoration = "manual";
   }
   window.scrollTo(0, 0);
+  window.addEventListener("pageshow", function () {
+    window.scrollTo(0, 0);
+  });
 
   /* ---------------------------------------------------- */
   /* Menu mobile accessible                                */
