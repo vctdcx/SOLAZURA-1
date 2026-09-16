@@ -7,13 +7,10 @@
   /* ---------------------------------------------------- */
   /* Configuration Formspree                               */
   /* ---------------------------------------------------- */
-  /* PLACEHOLDER : aucun endpoint Formspree dédié aux demandes de   */
-  /* rendez-vous n'existe dans le projet (seul le formulaire de     */
-  /* contact d'index.html en a un : https://formspree.io/f/mzezpgdv */
-  /* — utilisé pour un autre formulaire). Créez un nouveau formulaire */
-  /* sur https://formspree.io (ou réutilisez celui-ci) et collez     */
-  /* son URL ci-dessous avant mise en production.                    */
-  var FORMSPREE_ENDPOINT = "TON_ENDPOINT_FORMSPREE_ICI";
+  /* Même endpoint que le formulaire de contact d'index.html : les    */
+  /* deux formulaires (contact et demande de rendez-vous) arrivent    */
+  /* dans la même boîte Formspree.                                    */
+  var FORMSPREE_ENDPOINT = "https://formspree.io/f/mzezpgdv";
 
   /* ---------------------------------------------------- */
   /* Schéma des questions par catégorie de service          */
