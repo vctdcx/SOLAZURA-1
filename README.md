@@ -29,19 +29,13 @@ Aucune dépendance CDN (Tailwind compilé, polices auto-hébergées) — le site
 
 Tokens définis dans `tailwind.config.js` : couleurs (`bone`, `ink`, `line`, `accent`), polices (`Fraunces` en titres, `Public Sans` en corps). Un seul accent (bleu ardoise `#1F3A5C`), pas de dégradés ni d'ombres décoratives.
 
-## Ce qui reste à brancher (placeholders volontaires, rien n'a été inventé)
+## Ce qui reste à brancher (rien n'a été inventé)
 
-Cherchez `[PLACEHOLDER` dans `index.html` :
-
-- Note Google, nombre d'avis, 3 avis réels, URL de la fiche Google Business
-- Nombre d'interventions réalisées
-- Certifications (Qualifelec IRVE, habilitations)
-- Photo de Victor devant le camion floqué (photo du tableau électrique en hero : faite)
-- Liens réseaux sociaux
-- Nom de domaine définitif (à reporter dans `canonical`, `og:url`, `og:image`, `sitemap.xml`, `robots.txt`, JSON-LD)
-- Outil de réservation en ligne (actuellement, tous les CTA « Réserver » pointent vers le formulaire de contact en bas de page — le formulaire n'a pas encore de traitement d'envoi côté serveur)
-- Offre ponctuelle en cours (bloc promo)
-- Hébergeur du site (mentions légales)
+- **Formspree du formulaire de réservation** (`assets/js/reservation.js`, constante `FORMSPREE_ENDPOINT`) : aucun endpoint n'existe encore pour `pages/reserver.html`, le formulaire ne peut donc pas être envoyé tant qu'un vrai endpoint Formspree n'est pas collé à la place de la valeur actuelle. Le formulaire de contact d'`index.html` a lui déjà un endpoint fonctionnel.
+- **Hébergeur du site** (`pages/mentions-legales.html`, section « Hébergement ») : mention légalement obligatoire, actuellement vide — nom, adresse et contact de l'hébergeur à renseigner une fois le site mis en ligne.
+- **Politique de confidentialité complète** (`pages/mentions-legales.html`, section « Cookies & données personnelles ») : durée de conservation des données, droits d'accès et de suppression RGPD à détailler.
+- **Certifications** (Qualifelec IRVE, habilitations) : à afficher uniquement une fois réellement obtenues et vérifiables — ne pas réintroduire de mention non vérifiée.
+- **Nombre d'interventions réalisées** : donnée chiffrée à ajouter si utile, une fois disponible.
 
 ## Notes techniques
 
