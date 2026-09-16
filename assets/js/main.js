@@ -105,6 +105,9 @@
         servicesTrigger.focus();
       }
     });
+    servicesDropdown.querySelectorAll("a").forEach(function (link) {
+      link.addEventListener("click", closeDropdown);
+    });
   }
 
   /* ---------------------------------------------------- */
