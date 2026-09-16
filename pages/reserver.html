@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Prendre rendez-vous | Solazura</title>
+<meta name="description" content="Demandez un rendez-vous avec Solazura pour votre projet électrique : dépannage, rénovation, borne de recharge ou extension. Indiquez vos disponibilités, nous vous recontactons pour confirmer." />
+<meta name="robots" content="noindex, follow" />
+<link rel="canonical" href="https://www.solazura.fr/reserver" />
+<!-- PLACEHOLDER : nom de domaine définitif à confirmer — mettre à jour canonical + og:url ci-dessous -->
+
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="fr_FR" />
+<meta property="og:site_name" content="Solazura" />
+<meta property="og:title" content="Prendre rendez-vous | Solazura" />
+<meta property="og:description" content="Décrivez votre projet et vos disponibilités, Solazura vous recontacte pour confirmer votre rendez-vous." />
+<meta property="og:url" content="https://www.solazura.fr/reserver" />
+
+<link rel="stylesheet" href="../assets/css/output.css" />
+<link rel="icon" type="image/png" href="../assets/img/favicon-32.png" />
+</head>
+<body>
+<script>
+  if ("scrollRestoration" in history) { history.scrollRestoration = "manual"; }
+  window.scrollTo(0, 0);
+</script>
+
+<a href="#contenu" class="skip-link">Aller au contenu principal</a>
+
+<!-- ============================================================ -->
+<!-- EN-TÊTE (shell commun — liens "Réserver" pointent vers le      -->
+<!-- formulaire de cette même page, puisqu'on y est déjà)           -->
+<!-- ============================================================ -->
+<header class="sticky top-0 z-50 bg-bone/95 backdrop-blur border-b border-line">
+  <div class="bg-accent text-white text-sm">
+    <div class="mx-auto max-w-content px-6 py-2 flex items-center justify-between gap-4">
+      <a href="tel:+33609219702" class="flex items-center gap-2 hover:underline">
+        <span aria-hidden="true">&#9742;</span>
+        <span>06 09 21 97 02</span>
+      </a>
+      <a href="#reservation-form" class="font-medium hover:underline">Réserver en ligne</a>
+    </div>
+  </div>
+
+  <div class="mx-auto max-w-content px-6 py-4 flex items-center justify-between">
+    <a href="../index.html" class="flex items-center gap-2.5 font-serif text-xl tracking-tight text-ink">
+      <img src="../assets/img/logo-64.png" alt="" width="32" height="32" class="h-8 w-8" />
+      Solazura
+    </a>
+
+    <nav aria-label="Navigation principale" class="hidden md:flex items-center gap-8 text-sm">
+      <a href="../index.html#offres" class="hover:text-accent transition-colors">Offres</a>
+
+      <div class="relative">
+        <button
+          type="button"
+          data-services-trigger
+          aria-expanded="false"
+          aria-controls="services-dropdown"
+          class="flex items-center gap-1 hover:text-accent transition-colors"
+        >
+          Services
+          <svg width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5"/></svg>
+        </button>
+        <div
+          id="services-dropdown"
+          data-services-dropdown
+          hidden
+          class="absolute left-0 top-full mt-3 w-72 bg-bone border border-line rounded shadow-lg py-3"
+        >
+          <a href="depannage-electrique.html" class="block px-5 py-2 text-sm hover:bg-bone-2 hover:text-accent">Dépannage électrique</a>
+          <a href="../index.html#services" class="block px-5 py-2 text-sm hover:bg-bone-2 hover:text-accent">Mise en conformité & tableaux</a>
+          <a href="installation-electrique.html" class="block px-5 py-2 text-sm hover:bg-bone-2 hover:text-accent">Installation électrique</a>
+          <a href="borne-recharge-irve.html" class="block px-5 py-2 text-sm hover:bg-bone-2 hover:text-accent">Bornes de recharge IRVE</a>
+          <a href="../index.html#services" class="block px-5 py-2 text-sm hover:bg-bone-2 hover:text-accent">Domotique</a>
+          <div class="border-t border-line my-2"></div>
+          <a href="../index.html#services" class="block px-5 py-2 text-sm font-medium text-accent hover:bg-bone-2">Voir tous les services →</a>
+        </div>
+      </div>
+
+      <a href="../index.html#entreprise" class="hover:text-accent transition-colors">L'entreprise</a>
+      <a href="../index.html#zone" class="hover:text-accent transition-colors">Zone d'intervention</a>
+      <a href="../index.html#contact" class="hover:text-accent transition-colors">Contact</a>
+    </nav>
+
+    <div class="hidden md:flex items-center gap-3">
+      <a href="tel:+33609219702" class="btn-secondary">Appeler</a>
+      <a href="#reservation-form" class="btn-primary">Réserver</a>
+    </div>
+
+    <button
+      type="button"
+      data-menu-toggle
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+      aria-label="Ouvrir le menu"
+      class="md:hidden flex flex-col gap-1.5 p-2"
+    >
+      <span class="block w-6 h-0.5 bg-ink"></span>
+      <span class="block w-6 h-0.5 bg-ink"></span>
+      <span class="block w-6 h-0.5 bg-ink"></span>
+    </button>
+  </div>
+</header>
+
+<div
+  id="mobile-menu"
+  data-menu-panel
+  hidden
+  class="md:hidden fixed inset-0 z-[60] bg-bone overflow-y-auto"
+>
+  <div class="flex items-center justify-between px-6 py-4 border-b border-line">
+    <span class="flex items-center gap-2.5 font-serif text-xl">
+      <img src="../assets/img/logo-64.png" alt="" width="32" height="32" class="h-8 w-8" />
+      Solazura
+    </span>
+    <button type="button" data-menu-close aria-label="Fermer le menu" class="p-2 text-2xl leading-none">&times;</button>
+  </div>
+  <nav aria-label="Navigation mobile" class="flex flex-col gap-1 px-6 py-6 text-lg">
+    <a href="../index.html#offres" class="py-3 border-b border-line">Offres</a>
+    <a href="../index.html#services" class="py-3 border-b border-line">Services</a>
+    <a href="../index.html#entreprise" class="py-3 border-b border-line">L'entreprise</a>
+    <a href="../index.html#zone" class="py-3 border-b border-line">Zone d'intervention</a>
+    <a href="../index.html#contact" class="py-3 border-b border-line">Contact</a>
+    <div class="flex flex-col gap-3 mt-6">
+      <a href="tel:+33609219702" class="btn-secondary w-full">Appeler — 06 09 21 97 02</a>
+      <a href="#reservation-form" class="btn-primary w-full">Réserver</a>
+    </div>
+  </nav>
+</div>
+
+<main id="contenu">
+
+  <section class="section max-w-3xl mx-auto">
+    <p class="eyebrow mb-3">Rendez-vous</p>
+    <h1 class="text-3xl md:text-4xl mb-4">Prendre rendez-vous</h1>
+    <p class="text-ink-muted mb-10">
+      Décrivez votre besoin et vos disponibilités : nous vérifions notre planning et vous contactons pour confirmer votre rendez-vous.
+    </p>
+
+    <!-- ============================================================ -->
+    <!-- Progression (5 étapes)                                        -->
+    <!-- ============================================================ -->
+    <ol data-progress class="flex flex-wrap gap-x-5 gap-y-2 text-xs md:text-sm text-ink-muted mb-10 pb-6 border-b border-line" aria-label="Étapes de la demande">
+      <li data-progress-step="1" class="font-medium text-accent">1. Votre projet</li>
+      <li data-progress-step="2">2. Votre besoin</li>
+      <li data-progress-step="3">3. Localisation</li>
+      <li data-progress-step="4">4. Disponibilités</li>
+      <li data-progress-step="5">5. Coordonnées</li>
+    </ol>
+
+    <form id="reservation-form" data-reservation-form novalidate>
+      <input type="hidden" name="_subject" value="Nouvelle demande de rendez-vous — Solazura" />
+
+      <!-- ========================================================== -->
+      <!-- ÉTAPE 1 — VOTRE PROJET                                      -->
+      <!-- ========================================================== -->
+      <section data-step-panel="1">
+        <h2 class="text-2xl md:text-3xl mb-2">Parlez-nous de votre projet</h2>
+        <p class="text-sm text-ink-muted mb-6">Quelques informations nous permettront de mieux préparer votre intervention.</p>
+
+        <div class="grid sm:grid-cols-2 gap-4" data-service-cards>
+          <label class="flex items-center gap-3 border border-line rounded p-5 cursor-pointer transition-colors hover:border-accent has-[:checked]:border-accent has-[:checked]:bg-accent-soft has-[:checked]:text-accent has-[:checked]:font-medium">
+            <input type="radio" name="service" value="depannage" class="sr-only" required />
+            <span class="text-2xl" aria-hidden="true">⚡</span>
+            <span>Dépannage électrique</span>
+          </label>
+          <label class="flex items-center gap-3 border border-line rounded p-5 cursor-pointer transition-colors hover:border-accent has-[:checked]:border-accent has-[:checked]:bg-accent-soft has-[:checked]:text-accent has-[:checked]:font-medium">
+            <input type="radio" name="service" value="renovation" class="sr-only" required />
+            <span class="text-2xl" aria-hidden="true">🏠</span>
+            <span>Rénovation électrique</span>
+          </label>
+          <label class="flex items-center gap-3 border border-line rounded p-5 cursor-pointer transition-colors hover:border-accent has-[:checked]:border-accent has-[:checked]:bg-accent-soft has-[:checked]:text-accent has-[:checked]:font-medium">
+            <input type="radio" name="service" value="irve" class="sr-only" required />
+            <span class="text-2xl" aria-hidden="true">🔌</span>
+            <span>Installation d'une borne de recharge</span>
+          </label>
+          <label class="flex items-center gap-3 border border-line rounded p-5 cursor-pointer transition-colors hover:border-accent has-[:checked]:border-accent has-[:checked]:bg-accent-soft has-[:checked]:text-accent has-[:checked]:font-medium">
+            <input type="radio" name="service" value="extension" class="sr-only" required />
+            <span class="text-2xl" aria-hidden="true">🏗️</span>
+            <span>Extension / construction</span>
+          </label>
+          <label class="flex items-center gap-3 border border-line rounded p-5 cursor-pointer transition-colors hover:border-accent has-[:checked]:border-accent has-[:checked]:bg-accent-soft has-[:checked]:text-accent has-[:checked]:font-medium sm:col-span-2">
+            <input type="radio" name="service" value="autre" class="sr-only" required />
+            <span>Autre demande</span>
+          </label>
+        </div>
+        <p class="text-xs text-red-700 mt-2" data-error-for="service" hidden></p>
+      </section>
+
+      <!-- ========================================================== -->
+      <!-- ÉTAPE 2 — QUESTIONS ADAPTATIVES (générées en JS)            -->
+      <!-- ========================================================== -->
+      <section data-step-panel="2" hidden>
+        <h2 class="text-2xl md:text-3xl mb-2">Votre besoin</h2>
+        <p class="text-sm text-ink-muted mb-6" data-step2-subtitle></p>
+        <div class="space-y-8" data-step2-container></div>
+      </section>
+
+      <!-- ========================================================== -->
+      <!-- ÉTAPE 3 — LOCALISATION                                      -->
+      <!-- ========================================================== -->
+      <section data-step-panel="3" hidden>
+        <h2 class="text-2xl md:text-3xl mb-2">À quelle adresse se situe l'intervention ?</h2>
+        <p class="text-sm text-ink-muted mb-6">Ces informations nous permettent de vérifier notre secteur d'intervention.</p>
+
+        <div class="space-y-5 max-w-lg">
+          <div>
+            <label for="adresse" class="block text-sm font-medium mb-1">Adresse</label>
+            <input type="text" id="adresse" name="adresse" required class="w-full border border-line rounded px-4 py-2 bg-bone focus-visible:outline-accent" />
+            <p class="text-xs text-red-700 mt-1" data-error-for="adresse" hidden></p>
+          </div>
+          <div class="grid sm:grid-cols-2 gap-5">
+            <div>
+              <label for="code_postal" class="block text-sm font-medium mb-1">Code postal</label>
+              <input type="text" id="code_postal" name="code_postal" inputmode="numeric" required class="w-full border border-line rounded px-4 py-2 bg-bone focus-visible:outline-accent" />
+              <p class="text-xs text-red-700 mt-1" data-error-for="code_postal" hidden></p>
+            </div>
+            <div>
+              <label for="ville" class="block text-sm font-medium mb-1">Ville</label>
+              <input type="text" id="ville" name="ville" required class="w-full border border-line rounded px-4 py-2 bg-bone focus-visible:outline-accent" />
+              <p class="text-xs text-red-700 mt-1" data-error-for="ville" hidden></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================================== -->
+      <!-- ÉTAPE 4 — DISPONIBILITÉS                                    -->
+      <!-- ========================================================== -->
+      <section data-step-panel="4" hidden>
+        <h2 class="text-2xl md:text-3xl mb-2">Quand souhaitez-vous être contacté / recevoir notre intervention ?</h2>
+        <p class="text-sm text-ink-muted mb-6">Indiquez-nous plusieurs disponibilités. Nous vérifierons notre planning et vous contacterons pour confirmer le rendez-vous.</p>
+
+        <div class="space-y-8 max-w-xl" data-availability-container>
+          <fieldset>
+            <legend class="font-medium mb-3">Disponibilité 1 <span class="text-accent" aria-hidden="true">*</span></legend>
+            <div class="grid sm:grid-cols-2 gap-4">
+              <div>
+                <label for="dispo1-date" class="block text-sm font-medium mb-1">Date</label>
+                <input type="date" id="dispo1-date" name="disponibilite_1_date" data-dispo-date="1" class="w-full border border-line rounded px-4 py-2 bg-bone focus-visible:outline-accent" />
+                <p class="text-xs text-red-700 mt-1" data-error-for="disponibilite_1_date" hidden></p>
+              </div>
+              <div>
+                <label for="dispo1-horaire" class="block text-sm font-medium mb-1">Créneau souhaité</label>
+                <select id="dispo1-horaire" name="disponibilite_1_horaire" class="w-full border border-line rounded px-4 py-2 bg-bone focus-visible:outline-accent">
+                  <option value="">Choisir…</option>
+                  <option value="Matin (8h00 – 12h00)">Matin (8h00 – 12h00)</option>
+                  <option value="Début d'après-midi (13h00 – 15h00)">Début d'après-midi (13h00 – 15h00)</option>
+                  <option value="Fin d'après-midi (15h00 – 18h00)">Fin d'après-midi (15h00 – 18h00)</option>
+                </select>
+                <p class="text-xs text-red-700 mt-1" data-error-for="disponibilite_1_horaire" hidden></p>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend class="font-medium mb-3">Disponibilité 2 <span class="text-ink-muted font-normal">(facultative)</span></legend>
+            <div class="grid sm:grid-cols-2 gap-4">
+              <div>
+                <label for="dispo2-date" class="block text-sm font-medium mb-1">Date</label>
+                <input type="date" id="dispo2-date" name="disponibilite_2_date" data-dispo-date="2" class="w-full border border-line rounded px-4 py-2 bg-bone focus-visible:outline-accent" />
+                <p class="text-xs text-red-700 mt-1" data-error-for="disponibilite_2_date" hidden></p>
+              </div>
+              <div>
+                <label for="dispo2-horaire" class="block text-sm font-medium mb-1">Créneau souhaité</label>
+                <select id="dispo2-horaire" name="disponibilite_2_horaire" class="w-full border border-line rounded px-4 py-2 bg-bone focus-visible:outline-accent">
+                  <option value="">Choisir…</option>
+                  <option value="Matin (8h00 – 12h00)">Matin (8h00 – 12h00)</option>
+                  <option value="Début d'après-midi (13h00 – 15h00)">Début d'après-midi (13h00 – 15h00)</option>
+                  <option value="Fin d'après-midi (15h00 – 18h00)">Fin d'après-midi (15h00 – 18h00)</option>
+                </select>
+                <p class="text-xs text-red-700 mt-1" data-error-for="disponibilite_2_horaire" hidden></p>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend class="font-medium mb-3">Disponibilité 3 <span class="text-ink-muted font-normal">(facultative)</span></legend>
+            <div class="grid sm:grid-cols-2 gap-4">
+              <div>
+                <label for="dispo3-date" class="block text-sm font-medium mb-1">Date</label>
+                <input type="date" id="dispo3-date" name="disponibilite_3_date" data-dispo-date="3" class="w-full border border-line rounded px-4 py-2 bg-bone focus-visible:outline-accent" />
+                <p class="text-xs text-red-700 mt-1" data-error-for="disponibilite_3_date" hidden></p>
+              </div>
+              <div>
+                <label for="dispo3-horaire" class="block text-sm font-medium mb-1">Créneau souhaité</label>
+                <select id="dispo3-horaire" name="disponibilite_3_horaire" class="w-full border border-line rounded px-4 py-2 bg-bone focus-visible:outline-accent">
+                  <option value="">Choisir…</option>
+                  <option value="Matin (8h00 – 12h00)">Matin (8h00 – 12h00)</option>
+                  <option value="Début d'après-midi (13h00 – 15h00)">Début d'après-midi (13h00 – 15h00)</option>
+                  <option value="Fin d'après-midi (15h00 – 18h00)">Fin d'après-midi (15h00 – 18h00)</option>
+                </select>
+                <p class="text-xs text-red-700 mt-1" data-error-for="disponibilite_3_horaire" hidden></p>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+      </section>
+
+      <!-- ========================================================== -->
+      <!-- ÉTAPE 5 — COORDONNÉES                                       -->
+      <!-- ========================================================== -->
+      <section data-step-panel="5" hidden>
+        <h2 class="text-2xl md:text-3xl mb-6">Vos coordonnées</h2>
+
+        <div class="space-y-5 max-w-lg">
+          <div class="grid sm:grid-cols-2 gap-5">
+            <div>
+              <label for="prenom" class="block text-sm font-medium mb-1">Prénom</label>
+              <input type="text" id="prenom" name="prenom" required class="w-full border border-line rounded px-4 py-2 bg-bone focus-visible:outline-accent" />
+              <p class="text-xs text-red-700 mt-1" data-error-for="prenom" hidden></p>
+            </div>
+            <div>
+              <label for="nom" class="block text-sm font-medium mb-1">Nom</label>
+              <input type="text" id="nom" name="nom" required class="w-full border border-line rounded px-4 py-2 bg-bone focus-visible:outline-accent" />
+              <p class="text-xs text-red-700 mt-1" data-error-for="nom" hidden></p>
+            </div>
+          </div>
+          <div>
+            <label for="telephone" class="block text-sm font-medium mb-1">Téléphone</label>
+            <input type="tel" id="telephone" name="telephone" required class="w-full border border-line rounded px-4 py-2 bg-bone focus-visible:outline-accent" />
+            <p class="text-xs text-red-700 mt-1" data-error-for="telephone" hidden></p>
+          </div>
+          <div>
+            <label for="email" class="block text-sm font-medium mb-1">Email</label>
+            <input type="email" id="email" name="email" required class="w-full border border-line rounded px-4 py-2 bg-bone focus-visible:outline-accent" />
+            <p class="text-xs text-red-700 mt-1" data-error-for="email" hidden></p>
+          </div>
+          <div>
+            <label for="message" class="block text-sm font-medium mb-1">Informations complémentaires <span class="text-ink-muted font-normal">(facultatif)</span></label>
+            <textarea id="message" name="message" rows="3" class="w-full border border-line rounded px-4 py-2 bg-bone focus-visible:outline-accent"></textarea>
+          </div>
+          <div>
+            <label class="flex items-start gap-3 text-sm text-ink-muted">
+              <input type="checkbox" id="consentement" name="consentement" value="oui" required class="mt-1 h-4 w-4 shrink-0" />
+              <span>J'accepte que Solazura utilise mes informations pour me recontacter au sujet de ma demande. Voir nos <a href="mentions-legales.html" class="text-accent hover:underline">mentions légales</a>.</span>
+            </label>
+            <p class="text-xs text-red-700 mt-1" data-error-for="consentement" hidden></p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================================== -->
+      <!-- NAVIGATION ENTRE ÉTAPES                                     -->
+      <!-- ========================================================== -->
+      <div class="flex items-center justify-between mt-10 max-w-xl">
+        <button type="button" data-btn-prev class="btn-secondary">← Retour</button>
+        <button type="button" data-btn-next class="btn-primary ml-auto">Continuer →</button>
+        <button type="button" data-btn-submit class="btn-primary ml-auto">Envoyer ma demande</button>
+      </div>
+
+      <p data-reservation-error hidden class="text-sm text-red-700 mt-4">
+        Une erreur est survenue. Vous pouvez réessayer ou nous appeler au <a href="tel:+33609219702" class="underline">06 09 21 97 02</a>.
+      </p>
+    </form>
+
+    <!-- ============================================================ -->
+    <!-- CONFIRMATION APRÈS ENVOI                                      -->
+    <!-- ============================================================ -->
+    <div data-confirmation hidden class="max-w-xl">
+      <p class="eyebrow mb-3">Demande envoyée</p>
+      <h2 class="text-2xl md:text-3xl mb-4">Votre demande a bien été envoyée.</h2>
+      <p class="text-ink-muted mb-8">
+        Merci pour votre confiance. Nous allons vérifier nos disponibilités et vous contacter rapidement afin de confirmer votre rendez-vous.
+      </p>
+      <div class="border border-line rounded p-6 mb-8 text-sm space-y-2" data-confirmation-summary></div>
+      <a href="../index.html" class="btn-primary">Retour au site</a>
+    </div>
+
+  </section>
+
+</main>
+
+<!-- ============================================================ -->
+<!-- BANDEAU DE CONSENTEMENT RGPD (shell commun)                   -->
+<!-- ============================================================ -->
+<div
+  data-consent-banner
+  hidden
+  class="fixed bottom-0 inset-x-0 z-[70] bg-ink text-white px-4 py-3 md:px-6 md:py-5"
+  role="dialog"
+  aria-label="Consentement aux cookies"
+>
+  <div class="mx-auto max-w-content flex flex-row items-center justify-between gap-3 md:gap-4">
+    <p class="text-xs md:text-sm text-white/80">
+      <span class="md:hidden">Cookie de mesure publicitaire (Google Ads).</span>
+      <span class="hidden md:inline">Nous utilisons un cookie de mesure publicitaire (Google Ads) uniquement après votre accord. Voir notre <a href="mentions-legales.html" class="underline">politique de confidentialité</a>.</span>
+    </p>
+    <div class="flex gap-2 md:gap-3 shrink-0">
+      <button type="button" data-consent-decline class="btn !px-3 !py-1.5 text-xs md:!px-6 md:!py-3 md:text-sm border border-white/40 text-white hover:bg-white/10">Refuser</button>
+      <button type="button" data-consent-accept class="btn !px-3 !py-1.5 text-xs md:!px-6 md:!py-3 md:text-sm bg-white text-ink hover:bg-bone-2">Accepter</button>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- FOOTER (shell commun — identique à l'accueil)                 -->
+<!-- ============================================================ -->
+<footer class="bg-ink text-white">
+  <div class="mx-auto max-w-content px-6 py-16 grid sm:grid-cols-2 lg:grid-cols-4 gap-10 text-sm">
+    <div>
+      <p class="font-serif text-xl mb-4">Solazura</p>
+      <p class="text-white/70">Électricien résidentiel — Le Rouret & arrière-pays niçois.</p>
+    </div>
+    <div>
+      <p class="font-medium mb-4">Contact</p>
+      <ul class="space-y-2 text-white/70">
+        <li><a href="tel:+33609219702" class="hover:text-white">06 09 21 97 02</a></li>
+        <li><a href="mailto:victor@solazura.fr" class="hover:text-white">victor@solazura.fr</a></li>
+        <li>30 impasse du Chardon Bleu, 06650 Le Rouret</li>
+      </ul>
+    </div>
+    <div>
+      <p class="font-medium mb-4">Zone d'intervention</p>
+      <ul class="space-y-2 text-white/70">
+        <li>Le Rouret · Valbonne · Mougins</li>
+        <li>Grasse · Opio</li>
+        <li>Châteauneuf-Grasse · Roquefort-les-Pins</li>
+      </ul>
+    </div>
+    <div>
+      <p class="font-medium mb-4">Informations légales</p>
+      <ul class="space-y-2 text-white/70">
+        <li>SIRET 101 614 709 00018</li>
+        <li>Décennale Axeria (via Orus) — n° RCDA278570636</li>
+        <li><a href="mentions-legales.html" class="hover:text-white">Mentions légales</a></li>
+        <li><a href="https://share.google/VLk4mNRw6MYG613yM" class="hover:text-white" target="_blank" rel="noopener">Fiche Google</a></li>
+        <li class="italic">Réseaux sociaux — [PLACEHOLDER]</li>
+      </ul>
+    </div>
+  </div>
+  <div class="border-t border-white/10 py-6 text-center text-xs text-white/50">
+    © <span id="year"></span> Solazura — Tous droits réservés.
+  </div>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script src="../assets/js/main.js"></script>
+<script src="../assets/js/reservation.js"></script>
+
+</body>
+</html>
