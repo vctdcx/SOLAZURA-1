@@ -598,6 +598,11 @@
     })
       .then(function (response) {
         if (response.ok) {
+          if (typeof window.gtag === "function") {
+            window.gtag("event", "conversion", {
+              send_to: "AW-18110089839/auiICJ3VjPscEO-UyLtD",
+            });
+          }
           showConfirmation(data);
         } else {
           formError.hidden = false;
